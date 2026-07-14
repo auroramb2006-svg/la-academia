@@ -1,50 +1,7 @@
-* {
-    box-sizing: border-box;
-    padding: 0%;
-    margin: 0;
-}
-
-
-
-h1 {
-    color: var(--color-primario);
-    word-spacing: 0.2em;
-    font-weight: 100;
-}
-
-h2,
-h3,
-p {
-    color: var(--color-bg);
-
-}
-
 .hero h2,
 p {
     color: var(--ciruela-suave);
 }
-
-p {
-    font-size: clamp(1rem, 0.5vw, 3rem);
-}
-
-h2 {
-    font-size: clamp(1rem, 0.75vw, 1rem);
-
-}
-
-h1 {
-    font-size: clamp(2rem, 3vw, 4rem);
-}
-
-nav ul {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-
-}
-
-
 
 .hero {
     display: flex;
@@ -95,11 +52,7 @@ nav ul {
 
 .tarjeta-info img{
     align-self: flex-start;
-}
-
-.tarjeta-info h3 {
-    height: 100%;
-    align-content: center;
+    height: 70px;
 }
 
 .panel-info {
@@ -112,11 +65,6 @@ nav ul {
     margin: 0px auto;
 }
 
-
-.tarjeta-info img {
-    height: 70px;
-}
-
 .panel-info h2 {
     color: var(--color-primario);
     margin-top: 20px;
@@ -124,6 +72,8 @@ nav ul {
 }
 
 .panel-info h3 {
+    height: 100%;
+    align-content: center;
     color: var(--ciruela-suave);
     margin-top: 20px;
     font-size: 20px;
