@@ -73,18 +73,12 @@ nav ul {
     background-color: var(--rosa-oscuro);
 }
 
-.panel-info {
-    width: 100%;
-    margin: 1rem auto;
-    border-radius: 1rem;
-}
-
 .baraja-info {
     color: var(--color-bg);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 150px;
-    margin: 60px 0px;
+    margin: 20px 0px;
 
 }
 
@@ -94,18 +88,18 @@ nav ul {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* background-color: var(--crema); */
-    /* border-radius: 20px; */
     max-width: 300px;
     gap: 20px;
-    /* border: solid 0.5px var(--rosa-oscuro); */
-    justify-content: space-evenly;
-
+    /* justify-content: space-evenly; */
 }
 
-.tarjeta-info h2 {
-    font-size: 20px;
-    color: var(--ciruela-suave);
+.tarjeta-info img{
+    align-self: flex-start;
+}
+
+.tarjeta-info h3 {
+    height: 100%;
+    align-content: center;
 }
 
 .panel-info {
@@ -114,6 +108,8 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 2rem;
+    margin: 0px auto;
 }
 
 
