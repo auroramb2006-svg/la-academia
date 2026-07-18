@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'texto-academia';
-  src: url('../img/Sketch_Block.ttf') ;
+  src: url('../img/Sketch_Block.ttf');
 }
 
 :root {
-  --color-primario: #de9dc7;
-  --color-bg: #fdf7fb;
+  --color-primario: #b87fb6;
+  --color-bg: #faf8ff;
   --color-texto: #4a3a44;
   --color-accent: #9cdebb;
   --color-neutral: #f1e4ee;
-  --rosa-oscuro: #d9679f;
-  --rosa-claro: #ffe6f2;
+  --rosa-oscuro: #99699c;
+  --rosa-claro: #fee6ff;
   --ciruela: #3d2233;
   --ciruela-suave: #6b4a5d;
   --crema: #fdf6ef;
   --papel: #fbeee2;
-  --gold: #c99a4a;
+  --gold: #faf5ee;
   --sage: #7a9179;
   --linea: rgba(61, 34, 51, 0.08);
 
@@ -26,35 +26,39 @@
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0%;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0;
 }
 
 h1 {
-    color: var(--color-primario);
-    word-spacing: 0.2em;
-    font-weight: 100;
+  color: var(--color-primario);
+  word-spacing: 0.2em;
+  font-weight: 100;
+  font-size: clamp(2rem, 5vw , 4rem);
+
 }
 
 h2,
 h3,
 p {
-    color: var(--color-bg);
+  color: var(--color-bg);
 
 }
 
 p {
-    font-size: clamp(1rem, 0.5vw, 3rem);
+  font-size: clamp(1rem, 0.5vw, 3rem);
 }
+
+
 
 h2 {
-    font-size: clamp(1rem, 0.75vw, 1rem);
-
+  font-size: clamp(1.5rem, 1.5vw , 1.5rem);
 }
 
-h1 {
-    font-size: clamp(2rem, 3vw, 4rem);
+h3 {
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  line-height: 1.4;
 }
 
 h1,
@@ -63,7 +67,6 @@ h3,
 .navbar-brand {
   font-family: var(--font-heading);
   text-transform: uppercase;
-  /* Para mantener ese look de "La Academia" */
   letter-spacing: -0.02em;
 }
 
@@ -91,18 +94,18 @@ header {
   align-items: center;
   height: 120px;
   background-color: var(--color-primario);
-
+  z-index: 100;
 }
 
 nav ul {
-    display: flex;
-    gap: 30px;
-    list-style: none;
+  display: flex;
+  gap: 30px;
+  list-style: none;
 
 }
 
 body {
-  background-color: var(--color-bg);
+  background-color: var(--gold);
   font-family: var(--font-body);
   line-height: 1.6;
 }

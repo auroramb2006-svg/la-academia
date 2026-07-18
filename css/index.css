@@ -11,6 +11,7 @@ p {
     gap: 40px;
     justify-content: center;
     padding: 30px 80px;
+    background-color: rgb(255, 249, 249);
 }
 
 .grupo-botones {
@@ -24,7 +25,6 @@ p {
     font-size: 15px;
     height: 60px;
     padding: 10px;
-    border-radius: 15px;
     border: solid 0.5px;
     font-weight: 600;
     background-color: var(--rosa-oscuro);
@@ -50,14 +50,14 @@ p {
     /* justify-content: space-evenly; */
 }
 
-.tarjeta-info img{
+.tarjeta-info img {
     align-self: flex-start;
     height: 70px;
 }
 
 .panel-info {
     background-color: white;
-    box-shadow: 0px 5px 20px var(--color-neutral);
+    box-shadow: 0px 5px 20px var(--papel);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,7 +66,7 @@ p {
 }
 
 .panel-info h2 {
-    color: var(--color-primario);
+    color: var(--ciruela-suave);
     margin-top: 20px;
     font-size: 40px;
 }
@@ -88,9 +88,9 @@ p {
 
 .cuadricula {
     background-image:
-        linear-gradient(rgba(217, 103, 159, 0.13) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(217, 103, 159, 0.13) 1px, transparent 1px);
-    background-size: 28px 28px;
+        linear-gradient(rgba(255, 171, 210, 0.13) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 171, 210, 0.13) 1px, transparent 1px);
+    background-size: 40px 40px;
 }
 
 .sello {
@@ -100,7 +100,7 @@ p {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 2px solid var(--rosa-oscuro);
+    border: 2px solid var(--color-primario);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,14 +110,15 @@ p {
 
 .sello-texto {
     text-align: center;
-    font-weight: 600;
-    color: #d9679f;
-    font-size: 11px;
+    font-weight: 300;
+    color: var(--ciruela-suave);
+    font-size: 14px;
     line-height: 1.3;
 }
 
-.sello-text .big {
+.sello-texto .big {
     font-size: 20px;
+    font-weight: 900;
     display: block;
 
 }
@@ -134,4 +135,150 @@ p {
     background-color: white;
     color: var(--rosa-oscuro);
 
+}
+
+.panel-principal {
+
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 150px 0px;
+}
+
+
+
+.panel-principal h2 {
+    color: var(--ciruela-suave);
+}
+
+.niveles h2 {
+    margin-bottom: 40px;
+    color: white;
+    font-size: 35px;
+    font-family: var(--h1-texto);
+}
+
+
+.niveles ul {
+    list-style: none;
+}
+
+.niveles ul li {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.niveles ul li::before {
+    content: "✔";
+    margin-right: 20px;
+}
+
+.niveles {
+    background-color: var(--color-primario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 550px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.niveles ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.niveles .ap2 {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.dif {
+    background-color: white;
+    border: solid 0.5px var(--color-primario);
+}
+
+.dif h2 {
+    color: var(--color-primario);
+
+}
+
+.horario-box {
+    background-color: var(--color-primario);
+    height: 150px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+
+.horario-box h3 {
+    color: var(--color-bg);
+    font-size: 30px;
+    font-family: var(--font-heading);
+}
+
+.horario-box p {
+    color: var(--color-bg);
+    font-family: var(--font-body);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.baraja-precios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    margin: 200px 20px;
+
+}
+
+.tarjeta-precios {
+    max-width: 430px;
+    height: 470px;
+    border-radius: 20px;
+    background-color: var(--color-primario);
+    box-shadow: 0px 15px 15px var(--papel);
+}
+
+.num-precio {
+    background-color: white;
+    height: 163px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--rosa-oscuro);
+}
+
+.desc-precio ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 30px;
+    padding: 40px;
+    font-weight: 600;
+    color: var(--crema);
+    font-size: 20px;
+}
+
+.precios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
