@@ -1,0 +1,124 @@
+.sectionTrabaja{
+    margin: 2rem auto;
+}
+
+.sectionTrabaja h1 {
+    text-align: center;
+}
+
+.sectionTrabaja p {
+    text-align: center;
+    color: var(--ciruela);
+}
+
+.contenedorFormulario{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    width: 80%;
+    margin: 2rem auto;
+    justify-content: space-between;
+}
+
+.contenedorFormulario .formularioTrabajo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contenedorFormulario .formularioTrabajo>div:first-child{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 1rem;
+}
+
+.contenedorFormulario .formularioTrabajo>div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#customFile{
+    display: none;
+}
+
+.labelAtacched{
+    border: 0.5px gray solid;
+    border-radius: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.labelAtacched span:nth-child(2){
+    background-color: lightgray;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 1rem;
+}
+
+
+.formularioTrabajo div div{
+    display: flex;
+    flex-direction: column;
+}
+
+.formularioTrabajo div input, .formularioTrabajo div textarea{
+    border-radius: 10px;
+    padding: 10px;
+    border: 0.5px gray solid;
+}
+
+.formularioTrabajo div label{
+    color: gray;
+}
+
+.formularioTrabajo button{
+    align-self: center;
+    border-radius: 10px;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.contenedorFormulario aside{
+    height: 75%;
+    align-self: center;
+}
+
+
+.contenedorFormulario aside ul{
+    list-style: none;
+    padding: 0;
+}
+
+.contenedorFormulario aside li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    line-height: 25px;
+    margin-bottom: 0.5rem;
+}
+
+.contenedorFormulario aside li::before {
+    content: "✓";
+    color: var(--ciruela);
+    font-weight: 700;
+}
+
+.contenedorFormulario aside h2{
+    color: var(--color-primario);
+    text-align: center;
+    font-size: clamp(1rem, 3vw, 2.5rem);
+    margin-bottom: 1rem;
+}
+
+.contenedorFormulario aside, .contenedorFormulario .formularioTrabajo{
+    border-radius: 1rem;
+    box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.100);
+    padding: 2rem;
+    background-color: white;
+}
