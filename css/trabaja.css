@@ -1,3 +1,9 @@
+h2{
+    color: var(--color-primario);
+    text-align: center;
+    font-size: clamp(1rem, 3vw, 2.5rem);
+}
+
 .sectionTrabaja{
     margin: 2rem auto;
 }
@@ -68,11 +74,11 @@
 .formularioTrabajo div input, .formularioTrabajo div textarea{
     border-radius: 10px;
     padding: 10px;
-    border: 0.5px gray solid;
+    border: 0.5px var(--gris-texto) solid;
 }
 
 .formularioTrabajo div label{
-    color: gray;
+    color: var(--gris-texto);
 }
 
 .formularioTrabajo button{
@@ -110,15 +116,62 @@
 }
 
 .contenedorFormulario aside h2{
-    color: var(--color-primario);
-    text-align: center;
-    font-size: clamp(1rem, 3vw, 2.5rem);
     margin-bottom: 1rem;
 }
 
 .contenedorFormulario aside, .contenedorFormulario .formularioTrabajo{
     border-radius: 1rem;
-    box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.100);
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.100);
+
     padding: 2rem;
     background-color: white;
+}
+
+/* ESTILOS SELECCION */
+.sectionSeleccion{
+    width: 80%;
+    margin: 4rem auto;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionSeleccion p{
+    color: var(--gris-texto);
+}
+
+.contenedorTarjetasSeleccion{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.tarjetaSeleccion{
+    background-color: var(--crema);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.100);
+    height: 200px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.tarjetaSeleccion:hover{
+    background-color: var(--crema-hover);
+    position: relative;
+    top: -10px;
+}
+
+.tarjetaSeleccion span{
+    color: var(--ciruela-suave);
+    font-size: clamp(1rem, 3vw, 2rem);
+    font-weight: 600;
+}
+
+.tarjetaSeleccion h3{
+    color: var(--gris-texto);
+    font-weight: 300;
 }
