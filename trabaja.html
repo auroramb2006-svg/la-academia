@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,7 @@
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fredericka+the+Great&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <!-- header -->
     <header>
@@ -36,8 +38,6 @@
                 <li><a href="">Trabaja con nosotros</a></li>
                 <li><a href="">Contacto</a></li>
                 <li class="acento"><a href="">Solicitar Matrícula</a></li>
-
-
             </ul>
         </nav>
 
@@ -45,7 +45,80 @@
 
     <!-- main -->
     <main>
-
+        <section class="heroTrabaja cuadricula">
+            <h1>Trabaja con nosotros</h1>
+            <p>
+                Si te apasiona enseñar y querés formar parte de nuestro equipo, completá el formulario y adjuntá tu
+                currículum.
+            </p>
+        </section>
+        <section class="sectionTrabaja"> 
+            <div class="contenedorFormulario">
+                <form action="#" class="formularioTrabajo">
+                    <div>
+                        <div>
+                            <label for="name">Nombre </label>
+                            <input placeholder="Inserte su nombre" type="text" name="name" id="name" required>
+                        </div>
+                        <div>
+                            <label for="surname">Apellido </label>
+                            <input placeholder="Inserte su apellido" type="text" name="surname" id="surname" required>
+                        </div>
+                        <div>
+                            <label for="email">Correo electrónico </label>
+                            <input placeholder="Inserte su correo electrónico" type="email" name="email" id="email" required>
+                        </div>
+                        <div>
+                            <label for="phone">Telefono </label>
+                            <input placeholder="Inserte su número de teléfono" type="tel" name="phone" id="phone" required>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <div>
+                            <label for="mensaje">Mensaje </label>
+                            <textarea placeholder="Deje un mensaje" name="mensaje" id="mensaje"></textarea>
+                        </div>
+                        <label for="customFile" class="labelAtacched">
+                            <span>Currículum en formato PDF (Máx. 5MB)</span><span>Adjuntar PDF</span>
+                        </label>
+                        <input type="file" name="attached" id="customFile" accept=".pdf,application/pdf" required>
+                        <button type="submit">Enviar candidatura</button>
+                    </div>
+                </form>
+                <aside>
+                    <h2>Qué buscamos</h2>
+                    <ul>
+                        <li>Profesores con vocación por la enseñanza</li>
+                        <li>Experiencia en clases presenciales o de apoyo escolar</li>
+                        <li>Capacidad para adaptarse al nivel de cada alumno</li>
+                        <li>Compromiso, cercanía y buena comunicación</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+        <section class="sectionSeleccion">
+            <div>
+                <h2>¿Cómo es el proceso?</h2>
+                <p>Después de recibir tu candidatura, revisamos tu perfil y nos ponemos en contacto si se ajusta a las necesidades de la academia.</p>
+            </div>
+            <div class="contenedorTarjetasSeleccion">
+                <div class="tarjetaSeleccion">
+                    <span>1</span>
+                    <h3>Envías tu candidatura</h3>
+                </div>
+                <div class="tarjetaSeleccion">
+                    <span>2</span>
+                    <h3>Revisamos tu perfil</h3>
+                </div>
+                <div class="tarjetaSeleccion">
+                    <span>3</span>
+                    <h3>Coordinamos una entrevista</h3>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="js/trabaja.js"></script>
 </body>
+
 </html>
