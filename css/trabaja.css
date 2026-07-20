@@ -4,17 +4,38 @@ h2{
     font-size: clamp(1rem, 3vw, 2.5rem);
 }
 
-.sectionTrabaja{
-    margin: 2rem auto;
+/* ESTILOS HERO */
+
+.cuadricula {
+    background-image:
+        linear-gradient(rgba(217, 103, 159, 0.13) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(217, 103, 159, 0.13) 1px, transparent 1px);
+    background-size: 28px 28px;
 }
 
-.sectionTrabaja h1 {
+.heroTrabaja {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    gap: 40px;
+    justify-content: center;
+    padding: 30px 80px;
+}
+
+.heroTrabaja h1 {
     text-align: center;
 }
 
-.sectionTrabaja p {
+.heroTrabaja p {
     text-align: center;
     color: var(--ciruela);
+}
+
+/* ESTILOS FORMULARIO */
+
+.sectionTrabaja{
+    margin: 2rem auto;
 }
 
 .contenedorFormulario{
@@ -63,8 +84,13 @@ h2{
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     padding: 1rem;
+    transition: all 0.5s ease;
 }
 
+.labelAtacched:hover span:nth-child(2){
+    background-color: rgb(185, 185, 185);
+    color: white;
+}
 
 .formularioTrabajo div div{
     display: flex;
@@ -75,7 +101,13 @@ h2{
     border-radius: 10px;
     padding: 10px;
     border: 0.5px var(--gris-texto) solid;
+    outline: none;
 }
+
+.inputFocus{
+    box-shadow: 0px 0px 10px var(--color-primario);
+}
+
 
 .formularioTrabajo div label{
     color: var(--gris-texto);
@@ -85,9 +117,17 @@ h2{
     align-self: center;
     border-radius: 10px;
     padding: 1rem;
-    text-transform: uppercase;
+    font-size: 1rem;
+    /* text-transform: uppercase; */
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
+    transition: all 1s ease;
+}
+
+.formularioTrabajo button:hover{
+    cursor: pointer;
+    background-color: var(--rosa-oscuro);
+    transition: all 1s ease;
 }
 
 .contenedorFormulario aside{
@@ -157,12 +197,14 @@ h2{
     align-items: center;
     justify-content: space-evenly;
     padding: 1rem;
+    transition: all 0.5s ease;
 }
 
 .tarjetaSeleccion:hover{
     background-color: var(--crema-hover);
     position: relative;
-    top: -10px;
+    transform: translateY(-10px);
+    transition: all 0.5s ease;
 }
 
 .tarjetaSeleccion span{
