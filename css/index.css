@@ -79,7 +79,7 @@ p {
 .sello {
     position: absolute;
     top: 150px;
-    right: 25%;
+    right: 20%;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -164,15 +164,14 @@ p {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
 }
 
 .niveles-panel {
     background-color: var(--gris-tarjetas);
-    margin: 20px;
-    padding: 20px;
-    height: 200px;
+    margin: 10px;
+    height: 130px;
     width: 250px;
     align-items: center;
     display: flex;
@@ -181,6 +180,8 @@ p {
     border: solid 0.5px var(--color-primario);
     font-family: var(--font-heading);
     font-weight: 900;
+    transition: transform 0.3s ease;
+
 }
 
 .niveles-panel p {
@@ -191,9 +192,13 @@ p {
 
 .baraja-niveles {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
 
+}
+
+.selectividad {
+    width: 520px;
 }
 
 .niveles .ap2 {
@@ -220,8 +225,8 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
-    gap: 20px;
+    border-radius: 10px;
+    gap: 10px;
 }
 
 
@@ -231,12 +236,18 @@ p {
     font-family: var(--font-heading);
 }
 
-.horario-box p {
-    color: var(--gris-tarjetas);
-    font-family: var(--font-body);
-    font-size: 30px;
-    font-weight: 600;
+
+
+.horas-horario {
+    color: var(--ciruela-suave);
+    background-color: var(--crema);
+        font-size: 30px;
+        padding: 7px 10px;
+        border-radius: 10px;
+
 }
+
+
 
 
 .baraja-precios {

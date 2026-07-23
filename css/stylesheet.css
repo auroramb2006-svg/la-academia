@@ -13,9 +13,9 @@
   --rosa-claro: #fee6ff;
   --ciruela: #3d2233;
   --ciruela-suave: #6b4a5d;
-  --crema: #fdf6ef;
-  --papel: #fbeee2;
-  --gold: #faf5ee;
+  --crema: #fffbf6;
+  --papel: #eee9e4;
+  --gold: #f6f2ec;
   --gold-fuerte: #ffeacd;
   --sage: #7a9179;
   --gris-borde: #f2decb;
@@ -39,6 +39,10 @@
   margin: 0;
 }
 
+button{
+      cursor: pointer;
+
+}
 h1 {
   color: var(--color-primario);
   word-spacing: 0.2em;
