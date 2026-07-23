@@ -144,15 +144,15 @@ p {
     justify-content: center;
     gap: 150px;
     margin: 150px 0px;
- 
+
 }
 
 
 
 .panel-principal h2 {
     color: var(--ciruela-suave);
-        font-family: var(--h1-texto);
-font-size: 35px;
+    font-family: var(--h1-texto);
+    font-size: 35px;
 }
 
 
@@ -170,19 +170,19 @@ font-size: 35px;
     height: 550px;
     padding: 20px;
     border-radius: 20px;
-        border: solid 0.5px var(--color-primario);
-box-shadow: 0px 15px 35px var(--neutral);
+    border: solid 0.5px var(--color-primario);
+    box-shadow: 0px 15px 35px var(--neutral);
 }
 
-.panel-principal h2{
+.panel-principal h2 {
     color: var(--color-primario);
 }
 
-.caja-niveles{
+.caja-niveles {
     text-align: center;
     display: flex;
     flex-direction: column;
-gap: 10px;
+    gap: 10px;
     justify-content: center;
 }
 
@@ -201,18 +201,19 @@ gap: 10px;
     font-weight: 900;
 }
 
-.niveles-panel p{
-        font-size: 20px;
-        color: var(--color-primario);
+.niveles-panel p {
+    font-size: 20px;
+    color: var(--color-primario);
 
 }
 
-.baraja-niveles{
+.baraja-niveles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
+
 
 }
+
 .niveles .ap2 {
     display: flex;
     flex-direction: column;
@@ -259,8 +260,8 @@ gap: 10px;
 .baraja-precios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
-    margin: 200px 20px;
+    gap: 60px;
+    margin: 100px 20px;
 
 }
 
@@ -272,6 +273,8 @@ gap: 10px;
     border: solid 0.5px var(--gris-borde);
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease;
+
 }
 
 .num-precio {
@@ -298,24 +301,27 @@ gap: 10px;
     font-size: 20px;
 }
 
-.TE{
+.TE {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
     padding: 20px;
 }
-.desc-precio h3{
-    color: var(--ciruela-suave);
-    text-align: center;
-}
-.desc-precio p{
-    color: var(--ciruela-suave);
-    text-align: center;
-}
-.desc-precio button{
 
-height: 50px;
+.desc-precio h3 {
+    color: var(--ciruela-suave);
+    text-align: center;
+}
+
+.desc-precio p {
+    color: var(--ciruela-suave);
+    text-align: center;
+}
+
+.desc-precio button {
+
+    height: 50px;
     text-align: center;
 
 }
@@ -327,25 +333,26 @@ height: 50px;
     align-items: center;
 }
 
-.precios h2{
+.precios h2 {
     color: var(--color-primario);
     font-family: var(--font-heading);
     font-size: 60px;
 }
-.precios p{
+
+.precios p {
     color: var(--ciruela-suave);
     font-family: var(--font-heading);
     font-size: 20px;
 }
 
-.titulos-precios{
-border-top: solid 2px var(--gris-borde);
-border-bottom: solid 2px var(--gris-borde);
+.titulos-precios {
+    border-top: solid 2px var(--gris-borde);
+    border-bottom: solid 2px var(--gris-borde);
     background-color: var(--gris-tarjetas);
-width: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
 }
