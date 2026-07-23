@@ -16,11 +16,16 @@
   --crema: #fffbf6;
   --papel: #eadfd3;
   --gold: #f6f2ec;
+  --gold-fuerte: #ffeacd;
   --sage: #7a9179;
   --gris-borde: #f2decb;
+  --violeta: #7a4188;
   --gris-tarjetas: rgb(250, 250, 250);
   --gris-tarjetas-hover: rgb(240, 240, 240);
+  --gris-texto: rgb(169, 138, 173);
   --linea: rgba(61, 34, 51, 0.08);
+  --color-cuadricula: rgba(255, 171, 210, 0.13);
+  --background-hero: rgb(255, 249, 249);
 
   --h1-texto: texto-academia;
   --font-heading: 'Outfit', sans-serif;
@@ -133,4 +138,108 @@ a {
 
 .menu-hamburguesa {
   display: none;
+}
+
+/* FOOTER */
+footer{
+  background-color: var(--violeta);
+  padding-top: 2rem;
+}
+
+footer p, footer a{
+  color: var(--crema);
+}
+
+.tituloFooter{
+  color: var(--gold-fuerte);
+  font-size: clamp(1.25rem, 0.75vw, 3.5rem);
+  margin-bottom: 1rem;
+  line-height: 30px;
+}
+
+.contenidoFooter{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 200px;
+}
+
+.contenidoFooter>div{
+  padding: 1rem;
+  height: auto;
+}
+
+/* Primera columna footer */
+
+.contenidoFooter img{
+  width: 150px;
+}
+
+.contenidoFooter>div:first-child{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  align-items: center;
+}
+
+.contenidoFooter>div:first-child p{
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Segunda columna footer */
+
+.contenidoFooter div ul{
+  list-style: none;
+}
+
+.contenidoFooter div ul li{
+  padding: 0px;
+  line-height: 30px;
+}
+
+.divEnlaces{
+  width: 50%;
+  display: block;
+  margin: 0px auto;
+}
+
+/* Tercera columna footer */
+
+.contenidoFooter div address{
+  font-style: normal;
+}
+
+.contenidoFooter div address p{
+  line-height: 30px;
+}
+
+/* COPY FOOTER */
+
+.footerCopy p{
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: var(--rosa-claro);
+  margin-top: 1rem;
+  border-top: var(--rosa-claro) solid 1px;
+  padding: 1rem;
+}
+
+/* ESTILOS HERO GLOBAL */
+.cuadricula {
+    background-image:
+        linear-gradient(var(--color-cuadricula) 1px, transparent 1px),
+        linear-gradient(90deg, var(--color-cuadricula) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    gap: 40px;
+    justify-content: center;
+    padding: 30px 80px;
+    background-color: var(--background-hero);
 }
