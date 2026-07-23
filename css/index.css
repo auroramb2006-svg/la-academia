@@ -3,17 +3,6 @@ p {
     color: var(--ciruela-suave);
 }
 
-.hero {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 400px;
-    gap: 40px;
-    justify-content: center;
-    padding: 30px 80px;
-    background-color: rgb(255, 249, 249);
-}
-
 .grupo-botones {
     display: flex;
     gap: 20px;
@@ -85,13 +74,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.cuadricula {
-    background-image:
-        linear-gradient(rgba(255, 171, 210, 0.13) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 171, 210, 0.13) 1px, transparent 1px);
-    background-size: 40px 40px;
 }
 
 .sello {

@@ -24,6 +24,8 @@
   --gris-tarjetas-hover: rgb(240, 240, 240);
   --gris-texto: rgb(169, 138, 173);
   --linea: rgba(61, 34, 51, 0.08);
+  --color-cuadricula: rgba(255, 171, 210, 0.13);
+  --background-hero: rgb(255, 249, 249);
 
   --h1-texto: texto-academia;
   --font-heading: 'Outfit', sans-serif;
@@ -217,4 +219,23 @@ footer p, footer a{
   margin-top: 1rem;
   border-top: var(--rosa-claro) solid 1px;
   padding: 1rem;
+}
+
+/* ESTILOS HERO GLOBAL */
+.cuadricula {
+    background-image:
+        linear-gradient(var(--color-cuadricula) 1px, transparent 1px),
+        linear-gradient(90deg, var(--color-cuadricula) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    gap: 40px;
+    justify-content: center;
+    padding: 30px 80px;
+    background-color: var(--background-hero);
 }
