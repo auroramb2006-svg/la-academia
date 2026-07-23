@@ -130,3 +130,50 @@ a {
 .menu-hamburguesa {
   display: none;
 }
+
+/* FOOTER */
+footer{
+  background-color: #7a4188;
+  padding: 2rem 0px;
+}
+
+footer p, footer a{
+  color: var(--gris-tarjetas);
+}
+
+.tituloFooter{
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.contenidoFooter{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.contenidoFooter img{
+  width: 300px;
+}
+
+.contenidoFooter div{
+  padding: 1rem;
+}
+
+.contenidoFooter div ul{
+  list-style: none;
+}
+
+.contenidoFooter div ul li{
+  padding: 0px;
+}
+
+.divEnlaces{
+  width: 50%;
+  display: block;
+  margin: 0px auto;
+}
+
+.footerCopy p{
+  text-align: center;
+  letter-spacing: 1px;
+}
