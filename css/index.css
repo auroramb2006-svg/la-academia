@@ -66,6 +66,19 @@ p {
     margin: 0px auto;
 }
 
+
+.titulo-precios{
+
+background-color: var(--gris-tarjetas);
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 300px;
+justify-content: center;
+border-top: solid 0.5px var(--gris-borde);
+border-bottom: solid 0.5px var(--gris-borde);
+}
 .panel-info h2 {
     color: var(--color-primario);
     margin-top: 20px;
