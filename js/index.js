@@ -25,7 +25,7 @@ const botones = document.querySelectorAll('.btn-color');
 
 botones.forEach((btn) => {
     btn.addEventListener('mouseover', () => {
-        btn.style.backgroundColor = '#b27fbe';
+        btn.style.backgroundColor = '#c98a3d';
     });
 
     btn.addEventListener('mouseout', () => {

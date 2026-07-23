@@ -14,6 +14,11 @@ p {
     background-color: rgb(255, 249, 249);
 }
 
+.hero h2{
+
+  font-size: clamp(0.5rem, 1.5vw , 1rem);
+
+}
 .grupo-botones {
     display: flex;
     gap: 20px;
@@ -135,7 +140,7 @@ border-bottom: solid 0.5px var(--gris-borde);
     position: absolute;
     inset: 7px;
     border-radius: 50%;
-    border: 1px dashed #e893be;
+    border: 1px dashed var(--dorado-oscuro);
 }
 
 .grupo-botones .whats {
@@ -175,7 +180,6 @@ border-bottom: solid 0.5px var(--gris-borde);
     width: 500px;
     height: 550px;
     padding: 20px;
-    border-radius: 20px;
     border: solid 0.5px var(--color-primario);
     box-shadow: 0px 15px 35px var(--neutral);
 }
@@ -200,7 +204,6 @@ border-bottom: solid 0.5px var(--gris-borde);
     align-items: center;
     display: flex;
     justify-content: center;
-    border-radius: 10px;
     border: solid 0.5px var(--color-primario);
     font-family: var(--font-heading);
     font-weight: 900;
@@ -271,7 +274,9 @@ border-bottom: solid 0.5px var(--gris-borde);
 
 }
 
-
+.verano{
+    background-color: var(--rosa-oscuro);
+}
 
 
 .baraja-precios {
@@ -372,4 +377,8 @@ border-bottom: solid 0.5px var(--gris-borde);
     justify-content: center;
     align-items: center;
     height: 300px;
+}
+
+.acentuar{
+    border: solid 5px var(--dorado);
 }
