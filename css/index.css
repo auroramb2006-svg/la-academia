@@ -31,7 +31,7 @@ p {
 }
 
 .baraja-info {
-    color: var(--color-bg);
+    color: var(--gris-tarjetas);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 150px;
@@ -47,7 +47,6 @@ p {
     text-align: center;
     max-width: 300px;
     gap: 20px;
-    /* justify-content: space-evenly; */
 }
 
 .tarjeta-info img {
@@ -56,9 +55,11 @@ p {
 }
 
 .panel-info {
-    background-color: white;
+    background-color: var(--gris-tarjetas);
     box-shadow: 0px 5px 20px var(--papel);
     display: flex;
+    border-top: solid 0.2px var(--rosa-oscuro);
+    border-bottom: solid 0.2px var(--rosa-oscuro);
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
@@ -66,7 +67,7 @@ p {
 }
 
 .panel-info h2 {
-    color: var(--ciruela-suave);
+    color: var(--color-primario);
     margin-top: 20px;
     font-size: 40px;
 }
@@ -141,41 +142,26 @@ p {
 
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 150px;
     margin: 150px 0px;
+ 
 }
 
 
 
 .panel-principal h2 {
     color: var(--ciruela-suave);
-}
-
-.niveles h2 {
-    margin-bottom: 40px;
-    color: white;
-    font-size: 35px;
-    font-family: var(--h1-texto);
+        font-family: var(--h1-texto);
+font-size: 35px;
 }
 
 
-.niveles ul {
-    list-style: none;
-}
 
-.niveles ul li {
-    text-align: center;
-    color: white;
-    font-size: 25px;
-}
 
-.niveles ul li::before {
-    content: "✔";
-    margin-right: 20px;
-}
+
 
 .niveles {
-    background-color: var(--color-primario);
+    background-color: var(--gris-tarjetas);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,15 +170,48 @@ p {
     height: 550px;
     padding: 20px;
     border-radius: 20px;
+        border: solid 0.5px var(--color-primario);
+box-shadow: 0px 15px 35px var(--neutral);
 }
 
-.niveles ul {
+.panel-principal h2{
+    color: var(--color-primario);
+}
+
+.caja-niveles{
+    text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    font-weight: 700;
+gap: 90px;
+    justify-content: center;
 }
 
+.niveles-panel {
+    background-color: var(--gris-tarjetas);
+    margin: 20px;
+    padding: 20px;
+    height: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: solid 0.5px var(--color-primario);
+    font-family: var(--font-heading);
+    font-weight: 900;
+}
+
+.niveles-panel p{
+        font-size: 20px;
+        color: var(--color-primario);
+
+}
+
+.baraja-niveles{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+
+}
 .niveles .ap2 {
     display: flex;
     flex-direction: column;
@@ -200,7 +219,7 @@ p {
 }
 
 .dif {
-    background-color: white;
+    background-color: var(--gris-tarjetas);
     border: solid 0.5px var(--color-primario);
 }
 
@@ -223,13 +242,13 @@ p {
 
 
 .horario-box h3 {
-    color: var(--color-bg);
+    color: var(--gris-tarjetas);
     font-size: 30px;
     font-family: var(--font-heading);
 }
 
 .horario-box p {
-    color: var(--color-bg);
+    color: var(--gris-tarjetas);
     font-family: var(--font-body);
     font-size: 30px;
     font-weight: 600;
@@ -276,7 +295,7 @@ p {
     font-size: 20px;
 }
 
-.precios{
+.precios {
     display: flex;
     flex-direction: column;
     justify-content: center;
