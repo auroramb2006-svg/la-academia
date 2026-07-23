@@ -8,7 +8,7 @@
   --color-bg: #faf8ff;
   --color-texto: #4a3a44;
   --color-accent: #9cdebb;
-  --color-neutral: #f1e4ee;
+  --color-neutral: #ffeedd;
   --rosa-oscuro: #9f65ad;
   --rosa-claro: #fee6ff;
   --ciruela: #3d2233;
@@ -17,7 +17,7 @@
   --papel: #fbeee2;
   --gold: #faf5ee;
   --sage: #7a9179;
-  --gris-texto: gray;
+  --gris-borde: #f2decb;
   --gris-tarjetas: rgb(250, 250, 250);
   --gris-tarjetas-hover: rgb(240, 240, 240);
   --linea: rgba(61, 34, 51, 0.08);
