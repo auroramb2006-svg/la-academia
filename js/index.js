@@ -18,6 +18,19 @@ niveles.forEach((niv) => {
 
     niv.addEventListener('mouseout', () => {
         niv.style.transform = 'scale(1)';
+
+    });
+});
+const asignaturas = document.querySelectorAll('.tarjeta-asignaturas');
+
+asignaturas.forEach((asig) => {
+    asig.addEventListener('mouseover', () => {
+        asig.style.transform = 'scale(1.1)';
+    });
+
+    asig.addEventListener('mouseout', () => {
+        asig.style.transform = 'scale(1)';
+
     });
 });
 
@@ -32,3 +45,13 @@ botones.forEach((btn) => {
         btn.style.backgroundColor = '#9f65ad';
     });
 });
+const topes = document.querySelectorAll('.top');
+
+
+
+const btnT = document.getElementById('btn-asignaturas')
+const contenidoT = document.getElementById('contenido-panel-informativo')
+
+btnT.addEventListener('click', ()=>{
+    contenidoT.classList.toggle('mostrar')
+})

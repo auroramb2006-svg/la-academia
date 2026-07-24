@@ -14,11 +14,12 @@ p {
     background-color: rgb(255, 249, 249);
 }
 
-.hero h2{
+.hero h2 {
 
-  font-size: clamp(0.5rem, 1.5vw , 1rem);
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
 
 }
+
 .grupo-botones {
     display: flex;
     gap: 20px;
@@ -72,18 +73,19 @@ p {
 }
 
 
-.titulo-precios{
+.titulo-precios {
 
-background-color: var(--gris-tarjetas);
-width: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-height: 300px;
-justify-content: center;
-border-top: solid 0.5px var(--gris-borde);
-border-bottom: solid 0.5px var(--gris-borde);
+    background-color: var(--gris-tarjetas);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    justify-content: center;
+    border-top: solid 0.5px var(--gris-borde);
+    border-bottom: solid 0.5px var(--gris-borde);
 }
+
 .panel-info h2 {
     color: var(--color-primario);
     margin-top: 20px;
@@ -224,8 +226,11 @@ border-bottom: solid 0.5px var(--gris-borde);
 
 }
 
-.selectividad {
-    width: 520px;
+.asignaturas {
+    height: 130px;
+    width: 300px;
+    font-weight: 900;
+    font-size: 20px;
 }
 
 .niveles .ap2 {
@@ -268,13 +273,13 @@ border-bottom: solid 0.5px var(--gris-borde);
 .horas-horario {
     color: var(--ciruela-suave);
     background-color: var(--crema);
-        font-size: 30px;
-        padding: 7px 10px;
-        border-radius: 10px;
+    font-size: 30px;
+    padding: 7px 10px;
+    border-radius: 10px;
 
 }
 
-.verano{
+.verano {
     background-color: var(--rosa-oscuro);
 }
 
@@ -296,6 +301,7 @@ border-bottom: solid 0.5px var(--gris-borde);
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease;
+    position: relative;
 
 }
 
@@ -379,6 +385,99 @@ border-bottom: solid 0.5px var(--gris-borde);
     height: 300px;
 }
 
-.acentuar{
+.acentuar {
     border: solid 5px var(--dorado);
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+#contenido-panel-informativo {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: 300px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 20px;
+    border: solid 0.75px var(--color-principal);
+    background-color: var(--color-resaltante);
+    position: fixed;
+    bottom: 30px;
+    z-index: 100;
+    align-content: center;
+    background-color: var(--gris-tarjetas);
+right: 7%;
+border: solid 2px var(--color-primario);
+}
+
+#contenido-panel-informativo {
+
+    display: none;
+
+}
+
+#contenido-panel-informativo.mostrar {
+
+    display: block;
+
+
+}
+
+
+
+
+
+.tarjeta-asignaturas {
+    background-color: var(--color-primario);
+    height: 100px;
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+        transition: transform 0.3s ease;
+position: relative;
+}
+
+.tarjeta-asignaturas p{
+    color: var(--gris-tarjetas);
+}
+
+.baraja-asignaturas {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    margin: 0px 50px;
+
+}
+.info-click{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.top{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: var(--dorado);
+    width: 50px;
+    width: 60px;
+}
+.precios p{
+    color:white;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+.borde-dorado{
+    border: solid 4px var(--dorado);
+}
+
+.desc-precio .TE p{
+    color: var(--ciruela-suave);
 }
