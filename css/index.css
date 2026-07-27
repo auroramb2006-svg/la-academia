@@ -152,7 +152,7 @@ p {
 }
 
 .panel-principal {
-
+    align-items: flex-start;
     display: flex;
     justify-content: center;
     gap: 150px;
@@ -170,6 +170,19 @@ p {
 
 
 
+.top {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: var(--dorado);
+    width: 50px;
+    width: 60px;
+        color: var(--gris-tarjetas);
+        font-weight: 700;
+display: flex;
+justify-content: center;
+}
+
 
 
 
@@ -184,6 +197,7 @@ p {
     padding: 20px;
     border: solid 0.5px var(--color-primario);
     box-shadow: 0px 15px 35px var(--neutral);
+    
 }
 
 .panel-principal h2 {
@@ -194,7 +208,7 @@ p {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
     justify-content: center;
 }
 
@@ -236,7 +250,7 @@ p {
 .niveles .ap2 {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 40px;
 }
 
 .dif {
@@ -367,11 +381,6 @@ p {
     font-size: 60px;
 }
 
-.precios p {
-    color: var(--ciruela-suave);
-    font-family: var(--font-heading);
-    font-size: 20px;
-}
 
 .titulos-precios {
     border-top: solid 2px var(--gris-borde);
@@ -394,6 +403,7 @@ p {
     justify-content: center;
     margin: 30px 0px;
 }
+
 #contenido-panel-informativo {
     display: flex;
     justify-content: center;
@@ -409,21 +419,21 @@ p {
     z-index: 100;
     align-content: center;
     background-color: var(--gris-tarjetas);
-right: 7%;
-border: solid 2px var(--color-primario);
+    right: 7%;
+    border: solid 2px var(--color-primario);
 }
 
 #contenido-panel-informativo {
-
+    
     display: none;
-
+    
 }
 
 #contenido-panel-informativo.mostrar {
-
+    
     display: block;
-
-
+    
+    
 }
 
 
@@ -440,11 +450,11 @@ border: solid 2px var(--color-primario);
     justify-content: center;
     align-items: center;
     font-weight: 600;
-        transition: transform 0.3s ease;
-position: relative;
+    transition: transform 0.3s ease;
+    position: relative;
 }
 
-.tarjeta-asignaturas p{
+.tarjeta-asignaturas p {
     color: var(--gris-tarjetas);
 }
 
@@ -453,31 +463,35 @@ position: relative;
     justify-content: space-around;
     gap: 100px;
     margin: 0px 50px;
-
+    
 }
-.info-click{
+
+.info-click {
     font-size: 12px;
     font-weight: 100;
 }
 
-.top{
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    background-color: var(--dorado);
-    width: 50px;
-    width: 60px;
+
+.precios p {
+    font-family: var(--font-heading);
+    font-size: 20px;
 }
-.precios p{
-    color:white;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-}
-.borde-dorado{
+
+
+.borde-dorado {
     border: solid 4px var(--dorado);
 }
 
-.desc-precio .TE p{
+.desc-precio .TE p {
     color: var(--ciruela-suave);
+}
+
+.bloque {
+    flex: 1;
+    margin-top: 0;
+}
+
+.bloque h2 {
+    margin-top: 0;
+    text-align: center;
 }

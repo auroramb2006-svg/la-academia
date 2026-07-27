@@ -4,7 +4,7 @@
 }
 
 :root {
-  --color-primario: #b27fbe;
+  --color-primario: #b47dbe;
   --color-bg: #faf8ff;
   --color-texto: #4a3a44;
   --color-accent: #9cdebb;
@@ -17,11 +17,11 @@
   --papel: #f5efe8;
   --gold: #f6f2ec;
   --gold-fuerte: #ffeacd;
-  --dorado-oscuro:#c98a3d;
-  --dorado:#dfa661;
+  --dorado-oscuro: #c98a3d;
+  --dorado: #dfa661;
   --sage: #7a9179;
   --gris-borde: #f2decb;
-  --violeta: #663572;
+  --violeta: #865294;
   --gris-tarjetas: rgb(250, 250, 250);
   --gris-tarjetas-hover: rgb(240, 240, 240);
   --gris-texto: rgb(169, 138, 173);
@@ -41,15 +41,16 @@
   margin: 0;
 }
 
-button{
-      cursor: pointer;
+button {
+  cursor: pointer;
 
 }
+
 h1 {
   color: var(--color-primario);
   word-spacing: 0.2em;
   font-weight: 100;
-  font-size: clamp(3rem, 5vw , 4rem);
+  font-size: clamp(3rem, 5vw, 4rem);
 
 }
 
@@ -65,7 +66,7 @@ p {
 }
 
 h2 {
-  font-size: clamp(2rem, 1.5vw , 1.5rem);
+  font-size: clamp(2rem, 1.5vw, 1.5rem);
 }
 
 h3 {
@@ -87,6 +88,19 @@ h1 {
 
 .logo img {
   height: 90px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 20px;
+  font-family: var(--h1-texto);
+}
+
+.logo p{
+  color: var(--crema);
+  font-size: 30px;
 }
 
 button {
@@ -142,63 +156,64 @@ a {
 }
 
 /* FOOTER */
-footer{
+footer {
   background-color: var(--violeta);
   padding-top: 2rem;
 }
 
-footer p, footer a{
+footer p,
+footer a {
   color: var(--crema);
 }
 
-.tituloFooter{
+.tituloFooter {
   color: var(--gold-fuerte);
   font-size: clamp(1.25rem, 0.75vw, 3.5rem);
   margin-bottom: 1rem;
   line-height: 30px;
 }
 
-.contenidoFooter{
+.contenidoFooter {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   height: 200px;
 }
 
-.contenidoFooter>div{
+.contenidoFooter>div {
   padding: 1rem;
   height: auto;
 }
 
 /* Primera columna footer */
 
-.contenidoFooter img{
+.contenidoFooter img {
   width: 150px;
 }
 
-.contenidoFooter>div:first-child{
+.contenidoFooter>div:first-child {
   display: flex;
   flex-direction: column;
   height: 200px;
   align-items: center;
 }
 
-.contenidoFooter>div:first-child p{
+.contenidoFooter>div:first-child p {
   max-width: 300px;
   text-align: center;
 }
 
 /* Segunda columna footer */
 
-.contenidoFooter div ul{
+.contenidoFooter div ul {
   list-style: none;
 }
 
-.contenidoFooter div ul li{
+.contenidoFooter div ul li {
   padding: 0px;
   line-height: 30px;
 }
 
-.divEnlaces{
+.divEnlaces {
   width: 50%;
   display: block;
   margin: 0px auto;
@@ -206,17 +221,17 @@ footer p, footer a{
 
 /* Tercera columna footer */
 
-.contenidoFooter div address{
+.contenidoFooter div address {
   font-style: normal;
 }
 
-.contenidoFooter div address p{
+.contenidoFooter div address p {
   line-height: 30px;
 }
 
 /* COPY FOOTER */
 
-.footerCopy p{
+.footerCopy p {
   text-align: center;
   letter-spacing: 1px;
   font-weight: 500;
@@ -228,19 +243,19 @@ footer p, footer a{
 
 /* ESTILOS HERO GLOBAL */
 .cuadricula {
-    background-image:
-        linear-gradient(var(--color-cuadricula) 1px, transparent 1px),
-        linear-gradient(90deg, var(--color-cuadricula) 1px, transparent 1px);
-    background-size: 40px 40px;
+  background-image:
+    linear-gradient(var(--color-cuadricula) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-cuadricula) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
 .hero {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 400px;
-    gap: 40px;
-    justify-content: center;
-    padding: 30px 80px;
-    background-color: var(--background-hero);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  gap: 40px;
+  justify-content: center;
+  padding: 30px 80px;
+  background-color: var(--background-hero);
 }
