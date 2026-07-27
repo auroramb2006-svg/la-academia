@@ -165,7 +165,7 @@ footer p, footer a{
 /* Primera columna footer */
 
 .contenidoFooter img{
-  width: 150px;
+  width: 50%;
 }
 
 .contenidoFooter>div:first-child{
@@ -173,12 +173,13 @@ footer p, footer a{
   flex-direction: column;
   height: 200px;
   align-items: center;
+  justify-content: center;
 }
 
-.contenidoFooter>div:first-child p{
+/* .contenidoFooter>div:first-child p{
   max-width: 300px;
   text-align: center;
-}
+} */
 
 /* Segunda columna footer */
 
