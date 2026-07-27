@@ -4,15 +4,7 @@ h2{
 }
 
 /* ESTILOS HERO */
-
-.cuadricula {
-    background-image:
-        linear-gradient(rgba(217, 103, 159, 0.13) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(217, 103, 159, 0.13) 1px, transparent 1px);
-    background-size: 28px 28px;
-}
-
-.heroTrabaja {
+.hero {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -20,13 +12,14 @@ h2{
     gap: 40px;
     justify-content: center;
     padding: 30px 80px;
+    background-color: var(--background-hero);
 }
 
-.heroTrabaja h1 {
+.hero h1 {
     text-align: center;
 }
 
-.heroTrabaja p {
+.hero p {
     text-align: center;
     color: var(--ciruela);
 }

@@ -23,7 +23,7 @@
     <!-- header -->
     <header>
 
-        <div class="logo"><img src="img/logo.png" alt=""></div>
+        <div class="logo"><img src="img/logo.png" alt=""> <p>La Academia</p></div>
 
 
         <div class="menu-hamburguesa" id="btn-menu">
@@ -62,15 +62,14 @@
 
                 <div class="sello">
                     <div class="sello-texto"><span class="big">Nº1 <br></span> aprobados<br>precio · calidad</div>
-                    <div class="sello-texto"><span class="big">Nº1 <br></span> aprobados<br>precio · calidad</div>
                 </div>
             </div>
 
 
             <div class="grupo-botones">
 
-                <div><button> Solicitar Matricula</button></div>
-                <div><button class="whats"> Escríbenos por WhatsApp</button></div>
+                <div><button class="btn-color"> Solicitar Matricula</button></div>
+                <div><button class="btn-color"> Escríbenos por WhatsApp</button></div>
             </div>
 
         </section>
@@ -96,7 +95,7 @@
                         <img src="img/school_24dp_B27FBE_FILL0_wght400_GRAD0_opsz24.svg">
                     </figure>
 
-                    <h3>PROFESORES ESPECIALIZADOS</h3>
+                    <h3>Profesores especializados</h3>
 
                 </article>
 
@@ -108,7 +107,7 @@
                         <img src="img/payments_24dp_B27FBE_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                     </figure>
 
-                    <h3>PRECIOS ECONÓMICOS</h3>
+                    <h3>Precios económicos</h3>
 
                 </article>
             </div>
@@ -117,10 +116,12 @@
 
         <section class="panel-principal">
 
-            <div class="caja-niveles">
-                <h2>Niveles Académicos</h2>
+            <div class="caja-niveles bloque-contenedor">
+                <div class="bloque">
+                    <h2>Niveles Académicos</h2>
+                </div>
 
-                <div class="baraja-niveles">
+                <div class="baraja-niveles ">
                     <div class="niveles-panel">
                         <p>
                             Primaria
@@ -142,24 +143,69 @@
 
                         </p>
                     </div>
-                    <div class="niveles-panel">
+
+                    <div class="niveles-panel ">
                         <p>
                             Selectividad
                         </p>
                     </div>
+                    <div class="niveles-panel ">
+                        <button class="btn-color asignaturas" id="btn-asignaturas">Asignaturas<br> <span
+                                class="info-click">¡Haz click para ver las asignaturas disponibles!</span></button>
+                        <p></p>
+
+                    </div>
+
                 </div>
+
+                <div id="contenido-panel-informativo">
+
+                    <div class="baraja-asignaturas">
+
+                        <article class="tarjeta-asignaturas btn-color borde-dorado">
+                            <p>Matemáticas</p>
+                            <p class="top ">top</p>
+                        </article>
+                        <article class="tarjeta-asignaturas btn-color borde-dorado">
+                            <p>Física</p>
+                            <p class="top ">top</p>
+                        </article>
+                        <article class="tarjeta-asignaturas btn-color borde-dorado">
+                            <p>Química</p>
+                            <p class="top ">top</p>
+                        </article>
+                        <article class="tarjeta-asignaturas btn-color">
+                            <p>Francés</p>
+                        </article>
+                        <article class="tarjeta-asignaturas btn-color">
+                            <p>Inglés</p>
+                        </article>
+                        <article class="tarjeta-asignaturas btn-color">
+                            <p>Lengua y literatura
+                            </p>
+                        </article>
+                        <article class="tarjeta-asignaturas btn-color">
+                            <p> Física y química </p>
+                        </article>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="niveles dif">
-                <h2>Horario de Clases</h2>
+            <div class="niveles dif bloque-contenedor">
+                <div class="bloque">
+                    <h2>Horario de Clases</h2>
+                </div>
 
                 <div class="ap2">
 
                     <div class="horario-box">
                         <h3 class="titulo-horario">Octubre - Junio</h3>
                         <p class="horas-horario">16:30 - 21:30</p>
-                    </div class="horario-box">
-                    <div class="horario-box">
+                    </div>
+                    <div class="horario-box verano">
                         <h3 class="titulo-horario">Julio - Agosto</h3>
                         <p class="horas-horario">09:00 - 14:00</p>
                     </div>
@@ -172,8 +218,10 @@
 
         <section class="precios">
 
-            <h2> ¿Cuánto cuesta? </h2>
-            <p>Cuantas más asignaturas, ¡Menor precio! </p>
+            <div class="titulo-precios">
+                <h2> ¿Cuánto cuesta? </h2>
+                <p>Cuantas más asignaturas, ¡Menor precio! </p>
+            </div>
 
             <div class="baraja-precios">
                 <article class="tarjeta-precios">
@@ -203,7 +251,7 @@
 
 
                 </article>
-                <article class="tarjeta-precios">
+                <article class="tarjeta-precios borde-dorado">
 
                     <div class="num-precio">80€ /mes</div>
 
@@ -212,8 +260,11 @@
                             <li> 2 asignaturas</li>
                             <li> 2 horas a la semana cada una (martes y jueves)</li>
                         </ul>
+
+
                     </div>
 
+                    <p class="top">top</p>
 
                 </article>
                 <article class="tarjeta-precios">
@@ -253,7 +304,7 @@
                         <h3>¡Consultanos!</h3>
                         <p>No dudes en preguntarnos una combinación, te contestaremos con el precio en la mayor brevedad
                             posible</p>
-                        <button>Contácta con nosotros</button>
+                        <button class="btn-color">Contácta con nosotros</button>
                     </div>
 
 
@@ -263,7 +314,12 @@
     </main>
 
 
-
+        <section class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6405.974177719535!2d-4.531726!3d36.60262!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72fc9b33f0e3e9%3A0xc33acc92e21fddaa!2sLa%20Academia!5e0!3m2!1ses!2sus!4v1784816382214!5m2!1ses!2sus"
+                width="90%" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </section>
 
         <!-- footer -->
 

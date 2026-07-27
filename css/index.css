@@ -14,6 +14,12 @@ p {
     background-color: rgb(255, 249, 249);
 }
 
+.hero h2 {
+
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+
+}
+
 .grupo-botones {
     display: flex;
     gap: 20px;
@@ -66,6 +72,20 @@ p {
     margin: 0px auto;
 }
 
+
+.titulo-precios {
+
+    background-color: var(--gris-tarjetas);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    justify-content: center;
+    border-top: solid 0.5px var(--gris-borde);
+    border-bottom: solid 0.5px var(--gris-borde);
+}
+
 .panel-info h2 {
     color: var(--color-primario);
     margin-top: 20px;
@@ -87,17 +107,10 @@ p {
     align-items: center;
 }
 
-.cuadricula {
-    background-image:
-        linear-gradient(rgba(255, 171, 210, 0.13) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 171, 210, 0.13) 1px, transparent 1px);
-    background-size: 40px 40px;
-}
-
 .sello {
     position: absolute;
     top: 150px;
-    right: 25%;
+    right: 20%;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -129,7 +142,7 @@ p {
     position: absolute;
     inset: 7px;
     border-radius: 50%;
-    border: 1px dashed #e893be;
+    border: 1px dashed var(--dorado-oscuro);
 }
 
 .grupo-botones .whats {
@@ -139,7 +152,7 @@ p {
 }
 
 .panel-principal {
-
+    align-items: flex-start;
     display: flex;
     justify-content: center;
     gap: 150px;
@@ -157,6 +170,19 @@ p {
 
 
 
+.top {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: var(--dorado);
+    width: 50px;
+    width: 60px;
+        color: var(--gris-tarjetas);
+        font-weight: 700;
+display: flex;
+justify-content: center;
+}
+
 
 
 
@@ -169,9 +195,9 @@ p {
     width: 500px;
     height: 550px;
     padding: 20px;
-    border-radius: 20px;
     border: solid 0.5px var(--color-primario);
     box-shadow: 0px 15px 35px var(--neutral);
+    
 }
 
 .panel-principal h2 {
@@ -182,23 +208,23 @@ p {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 50px;
     justify-content: center;
 }
 
 .niveles-panel {
     background-color: var(--gris-tarjetas);
-    margin: 20px;
-    padding: 20px;
-    height: 200px;
+    margin: 10px;
+    height: 130px;
     width: 250px;
     align-items: center;
     display: flex;
     justify-content: center;
-    border-radius: 10px;
     border: solid 0.5px var(--color-primario);
     font-family: var(--font-heading);
     font-weight: 900;
+    transition: transform 0.3s ease;
+
 }
 
 .niveles-panel p {
@@ -209,15 +235,22 @@ p {
 
 .baraja-niveles {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
 
+}
+
+.asignaturas {
+    height: 130px;
+    width: 300px;
+    font-weight: 900;
+    font-size: 20px;
 }
 
 .niveles .ap2 {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 40px;
 }
 
 .dif {
@@ -238,8 +271,8 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
-    gap: 20px;
+    border-radius: 10px;
+    gap: 10px;
 }
 
 
@@ -249,11 +282,19 @@ p {
     font-family: var(--font-heading);
 }
 
-.horario-box p {
-    color: var(--gris-tarjetas);
-    font-family: var(--font-body);
+
+
+.horas-horario {
+    color: var(--ciruela-suave);
+    background-color: var(--crema);
     font-size: 30px;
-    font-weight: 600;
+    padding: 7px 10px;
+    border-radius: 10px;
+
+}
+
+.verano {
+    background-color: var(--rosa-oscuro);
 }
 
 
@@ -274,6 +315,7 @@ p {
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease;
+    position: relative;
 
 }
 
@@ -339,11 +381,6 @@ p {
     font-size: 60px;
 }
 
-.precios p {
-    color: var(--ciruela-suave);
-    font-family: var(--font-heading);
-    font-size: 20px;
-}
 
 .titulos-precios {
     border-top: solid 2px var(--gris-borde);
@@ -355,4 +392,106 @@ p {
     justify-content: center;
     align-items: center;
     height: 300px;
+}
+
+.acentuar {
+    border: solid 5px var(--dorado);
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+#contenido-panel-informativo {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: 300px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 20px;
+    border: solid 0.75px var(--color-principal);
+    background-color: var(--color-resaltante);
+    position: fixed;
+    bottom: 30px;
+    z-index: 100;
+    align-content: center;
+    background-color: var(--gris-tarjetas);
+    right: 7%;
+    border: solid 2px var(--color-primario);
+}
+
+#contenido-panel-informativo {
+    
+    display: none;
+    
+}
+
+#contenido-panel-informativo.mostrar {
+    
+    display: block;
+    
+    
+}
+
+
+
+
+
+.tarjeta-asignaturas {
+    background-color: var(--color-primario);
+    height: 100px;
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.tarjeta-asignaturas p {
+    color: var(--gris-tarjetas);
+}
+
+.baraja-asignaturas {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    margin: 0px 50px;
+    
+}
+
+.info-click {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+
+.precios p {
+    font-family: var(--font-heading);
+    font-size: 20px;
+}
+
+
+.borde-dorado {
+    border: solid 4px var(--dorado);
+}
+
+.desc-precio .TE p {
+    color: var(--ciruela-suave);
+}
+
+.bloque {
+    flex: 1;
+    margin-top: 0;
+}
+
+.bloque h2 {
+    margin-top: 0;
+    text-align: center;
 }

@@ -1,11 +1,57 @@
-const tarjetas = document.querySelectorAll('.tarjeta-precios'); 
+const tarjetas = document.querySelectorAll('.tarjeta-precios');
 
 tarjetas.forEach((tar) => {
     tar.addEventListener('mouseover', () => {
         tar.style.transform = 'scale(1.1)';
     });
-    
+
     tar.addEventListener('mouseout', () => {
-       tar.style.transform = 'scale(1)';
+        tar.style.transform = 'scale(1)';
     });
 });
+const niveles = document.querySelectorAll('.niveles-panel');
+
+niveles.forEach((niv) => {
+    niv.addEventListener('mouseover', () => {
+        niv.style.transform = 'scale(1.1)';
+    });
+
+    niv.addEventListener('mouseout', () => {
+        niv.style.transform = 'scale(1)';
+
+    });
+});
+const asignaturas = document.querySelectorAll('.tarjeta-asignaturas');
+
+asignaturas.forEach((asig) => {
+    asig.addEventListener('mouseover', () => {
+        asig.style.transform = 'scale(1.1)';
+    });
+
+    asig.addEventListener('mouseout', () => {
+        asig.style.transform = 'scale(1)';
+
+    });
+});
+
+const botones = document.querySelectorAll('.btn-color');
+
+botones.forEach((btn) => {
+    btn.addEventListener('mouseover', () => {
+        btn.style.backgroundColor = '#c98a3d';
+    });
+
+    btn.addEventListener('mouseout', () => {
+        btn.style.backgroundColor = '#9f65ad';
+    });
+});
+const topes = document.querySelectorAll('.top');
+
+
+
+const btnT = document.getElementById('btn-asignaturas')
+const contenidoT = document.getElementById('contenido-panel-informativo')
+
+btnT.addEventListener('click', ()=>{
+    contenidoT.classList.toggle('mostrar')
+})
