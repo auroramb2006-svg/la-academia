@@ -414,13 +414,13 @@ justify-content: center;
     border-radius: 20px;
     border: solid 0.75px var(--color-principal);
     background-color: var(--color-resaltante);
-    position: fixed;
-    bottom: 30px;
+display: none;    bottom: 30px;
     z-index: 100;
     align-content: center;
     background-color: var(--gris-tarjetas);
     right: 7%;
     border: solid 2px var(--color-primario);
+    transition: transform 0.3s ease;
 }
 
 #contenido-panel-informativo {
