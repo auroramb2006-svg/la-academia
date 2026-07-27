@@ -17,6 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fredericka+the+Great&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=calendar_month,chat,event_available" />
 </head>
 
 <body>
@@ -45,43 +46,182 @@
     </header>
 
     <!-- main -->
-    
+
     <main>
+
+        <!-- Banner 1: formulario de contacto -->
+        <section class="sectionContacto">
+
+            <div class="tituloSeccion">
+                <h1>Contacta con nosotros</h1>
+                <p>
+                    Si tienes dudas sobre clases, horarios o matrícula, completa el formulario
+                    y nos pondremos en contacto contigo lo antes posible.
+                </p>
+            </div>
+
+            <div class="contenedorContacto">
+
+                <form class="formularioContacto" action="#" method="post">
+
+                    <div class="campoFormulario">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+                    </div>
+
+                    <div class="campoFormulario">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="Introduce tu correo electrónico"
+                            required>
+                    </div>
+
+                    <div class="campoFormulario">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Introduce tu número de teléfono">
+                    </div>
+
+                    <div class="campoFormulario">
+                        <label for="motivo">Motivo de consulta</label>
+                        <select id="motivo" name="motivo" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="clases">Información sobre clases</option>
+                            <option value="matricula">Solicitar matrícula</option>
+                            <option value="horarios">Horarios y precios</option>
+                            <option value="trabajo">Trabajar con nosotros</option>
+                            <option value="otra">Otra consulta</option>
+                        </select>
+                    </div>
+
+                    <div class="campoFormulario campoCompleto">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu consulta" required></textarea>
+                    </div>
+
+                    <div class="campoCompleto contenedorBotonFormulario">
+                        <button type="submit" class="botonPrincipal">
+                            Enviar mensaje
+                        </button>
+                    </div>
+
+                </form>
+
+                <aside class="datosContacto">
+                    <h2>Contacto directo</h2>
+
+                    <ul>
+                        <li>
+                            <strong>Dirección:</strong>
+                            Calle Oropéndola Nº2, Arroyo de La Miel, Málaga
+                        </li>
+
+                        <li>
+                            <strong>Teléfono:</strong>
+                            +34 662 510 860
+                        </li>
+
+                        <li>
+                            <strong>Email:</strong>
+                            la_academia_sc@hotmail.com
+                        </li>
+                    </ul>
+
+                    <p>
+                        También puedes escribirnos por WhatsApp para resolver consultas rápidas
+                        sobre horarios, clases o matrícula.
+                    </p>
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- Banner 2: ubicación -->
+        <section class="sectionUbicacion">
+
+            <div class="tituloSeccion">
+                <h2>Dónde encontrarnos</h2>
+                <p>
+                    Nuestra academia se encuentra en Arroyo de La Miel, en una zona de fácil acceso
+                    para alumnos y familias.
+                </p>
+            </div>
+
+            <div class="contenedorMapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6405.974177719535!2d-4.531726!3d36.60262!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72fc9b33f0e3e9%3A0xc33acc92e21fddaa!2sLa%20Academia!5e0!3m2!1ses!2sus!4v1784816382214!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+        </section>
+
+
+        <!-- Banner 3: horarios -->
+        <section class="sectionHorarios">
+
+            <div class="tituloSeccion">
+                <h2>Horarios de atención</h2>
+                <p>
+                    Puedes visitarnos o contactar con nosotros dentro de nuestro horario de atención.
+                </p>
+            </div>
+
+            <div class="gridHorarios">
+
+                <article class="tarjetaHorario">
+                    <span class="material-symbols-outlined">calendar_month</span>
+                    <h3>Lunes a viernes</h3>
+                    <p>16:00 - 20:00</p>
+                </article>
+
+                <article class="tarjetaHorario">
+                    <span class="material-symbols-outlined">event_available</span>
+                    <h3>Sábados</h3>
+                    <p>Consultar disponibilidad</p>
+                </article>
+
+                <article class="tarjetaHorario">
+                    <span class="material-symbols-outlined">chat</span>
+                    <h3>WhatsApp</h3>
+                    <p>Respondemos consultas durante el horario de atención.</p>
+                </article>
+
+            </div>
+
+        </section>
 
     </main>
 
     <!-- footer -->
 
-        <footer>
-            <div class="contenidoFooter">
-                <div>
-                    <img src="img/logo.png" alt="Logo de la academia">
-                    <!-- <p>Aprendizaje cercano, grupos reducidos y acompañamiento personalizado</p> -->
-                </div>
-                <div class="divEnlaces ">
-                    <p class="tituloFooter">Enlaces</p>
-                    <ul>
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./trabaja.html">Trabaja con nosotros</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                        <li><a href="./matricula.html">Solicitar Matrícula</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <address>
-                        <p class="tituloFooter">Contacto</p>
-                        <div>
-                            <p>Calle Oropéndola N°2, Arroyo de La Miel, Málaga</p>
-                            <p>+34 662510860</p>
-                            <p>la_academia_sc@hotmail.com</p>
-                        </div>
-                    </address>
-                </div>
+    <footer>
+        <div class="contenidoFooter">
+            <div>
+                <img src="img/logo.png" alt="Logo de la academia">
+                <!-- <p>Aprendizaje cercano, grupos reducidos y acompañamiento personalizado</p> -->
             </div>
-            <div class="footerCopy">
-                <p>© 2026 Academia - Todos los derechos reservados</p>
+            <div class="divEnlaces ">
+                <p class="tituloFooter">Enlaces</p>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./trabaja.html">Trabaja con nosotros</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./matricula.html">Solicitar Matrícula</a></li>
+                </ul>
             </div>
-        </footer>
+            <div>
+                <address>
+                    <p class="tituloFooter">Contacto</p>
+                    <div>
+                        <p>Calle Oropéndola N°2, Arroyo de La Miel, Málaga</p>
+                        <p>+34 662510860</p>
+                        <p>la_academia_sc@hotmail.com</p>
+                    </div>
+                </address>
+            </div>
+        </div>
+        <div class="footerCopy">
+            <p>© 2026 Academia - Todos los derechos reservados</p>
+        </div>
+    </footer>
 
     </main>
     <script src="js/contacto.js"></script>
