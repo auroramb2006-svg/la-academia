@@ -55,3 +55,16 @@ const contenidoT = document.getElementById('contenido-panel-informativo')
 btnT.addEventListener('click', ()=>{
     contenidoT.classList.toggle('mostrar')
 })
+
+
+
+const btnMenu = document.getElementById('btn-menu');
+const navLinks = document.getElementById('nav-links');
+
+if (btnMenu && navLinks) {
+    btnMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('abierto');     
+        
+        btnMenu.classList.toggle('animacion'); 
+    });
+}
