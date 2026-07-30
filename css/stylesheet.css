@@ -45,6 +45,30 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+.boton-arriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--dorado);
+  color: var(--crema);
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5%;
+  font-size: 20px;
+    opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 999;
+}
+
+.boton-arriba.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .menu-hamburguesa {
   display: none;
   flex-direction: column;
