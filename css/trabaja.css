@@ -27,7 +27,7 @@ h2{
 /* ESTILOS FORMULARIO */
 
 .sectionTrabaja{
-    margin: 2rem auto;
+    margin: 4rem auto;
 }
 
 .contenedorFormulario{
@@ -62,7 +62,7 @@ h2{
 }
 
 .labelAtacched{
-    border: 0.5px gray solid;
+    border: 1px solid var(--gris-borde);
     border-radius: 1rem;
     display: flex;
     width: 100%;
@@ -72,15 +72,16 @@ h2{
 }
 
 .labelAtacched span:nth-child(2){
-    background-color: lightgray;
+    background-color: var(--gold-fuerte);
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     padding: 1rem;
     transition: all 0.5s ease;
+    color: var(--rosa-oscuro);
 }
 
 .labelAtacched:hover span:nth-child(2){
-    background-color: rgb(185, 185, 185);
+    background-color: var(--dorado);
     color: white;
 }
 
@@ -90,11 +91,21 @@ h2{
 }
 
 .formularioTrabajo div input, .formularioTrabajo div textarea{
-    border-radius: 10px;
-    padding: 10px;
-    border: 0.5px var(--gris-texto) solid;
+    padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--gris-borde);
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 0.5vw, 1.225rem);
+  color: var(--color-texto);
+  background-color: white;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  resize: none;
+}
+
+.formularioTrabajo div input:focus, .formularioTrabajo div textarea:focus{
     outline: none;
-    background-color: white;
+  border-color: var(--color-primario);
+  box-shadow: 0 0 0 3px rgba(178, 127, 190, 0.15);
 }
 
 .inputFocus{
@@ -103,28 +114,45 @@ h2{
 
 
 .formularioTrabajo div label{
-    color: var(--gris-texto);
+    font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--ciruela-suave);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .formularioTrabajo button{
+    width: min-content;
     align-self: center;
-    border-radius: 10px;
-    padding: 1rem;
-    font-size: 1rem;
-    /* text-transform: uppercase; */
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    transition: all 1s ease;
+    background-color: var(--color-primario);
+  color: white;
+  border: none;
+  margin-top: 1rem;
+  padding: 16px 32px;
+  border-radius: 10px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(178, 127, 190, 0.2);
 }
 
 .formularioTrabajo button:hover{
-    cursor: pointer;
     background-color: var(--rosa-oscuro);
-    transition: all 1s ease;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(178, 127, 190, 0.3);
+}
+
+.formularioTrabajo button:active{
+    transform: translateY(0);
 }
 
 .contenedorFormulario aside{
-    height: 75%;
+    height: fit-content;
     align-self: center;
 }
 
@@ -163,16 +191,17 @@ h2{
 
 /* ESTILOS SELECCION */
 .sectionSeleccion{
-    width: 80%;
-    margin: 4rem auto;
+    width: 100%;
+    padding: 5rem 0px;
     display: flex;
     gap: 2rem;
     flex-direction: column;
     align-items: center;
+    background-color: var(--crema);
 }
 
 .sectionSeleccion p{
-    color: var(--gris-texto);
+    color: var(--ciruela-suave);
     text-align: center;
 }
 
