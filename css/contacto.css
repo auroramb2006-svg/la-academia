@@ -15,7 +15,7 @@
 .tituloSeccion h1,
 .tituloSeccion h2 {
   color: var(--color-primario);
-  margin-bottom: 15px;
+  margin-bottom: 0.5rem;
 }
 
 .tituloSeccion p {
@@ -74,11 +74,11 @@
 .campoFormulario input,
 .campoFormulario select,
 .campoFormulario textarea {
-  padding: 14px 18px;
+  padding: 1rem;
   border-radius: 10px;
   border: 1px solid var(--gris-borde);
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: clamp(1rem, 0.5vw, 1.225rem);
   color: var(--color-texto);
   background-color: white;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -93,13 +93,15 @@
 }
 
 .campoFormulario textarea {
-  resize: vertical;
-  min-height: 140px;
+  resize: none;
+  min-height: 100px;
 }
 
 /* Contenedor del Botón de Envío */
 .contenedorBotonFormulario {
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .botonPrincipal {
@@ -129,6 +131,10 @@
 }
 
 /* Datos de Contacto Directo */
+.datosContacto{
+  height: fit-content;
+}
+
 .datosContacto h2 {
   color: var(--color-primario);
   font-size: 1.8rem;
