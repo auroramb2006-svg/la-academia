@@ -526,7 +526,7 @@ font-size: var( --fs-p);
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
 
 
 
@@ -601,7 +601,7 @@ font-size: var( --fs-p);
 
 }
 
-@media (min-width: 401px) and (max-width: 800px) {
+@media (min-width: 426px) and (max-width: 800px) {
 
 
 
