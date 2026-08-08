@@ -515,7 +515,7 @@ header nav #nav-links.abierto {
 
   .sticky {
     position: sticky;
-    z-index: 1001;
+    z-index: 900;
     top: 0;
   }
 
@@ -710,7 +710,7 @@ header nav #nav-links.abierto {
 
   .sticky {
     position: sticky;
-    z-index: 1001;
+    z-index: 900;
     top: 0;
   }
 

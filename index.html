@@ -19,7 +19,7 @@
         rel="stylesheet">
 </head>
 
-<body >
+<body>
 
     <div id="arriba"></div>
     <!-- header -->
@@ -42,7 +42,95 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="trabaja.html">Trabaja con nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li class="acento"><a href="">Solicitar Matrícula</a></li>
+                <li class="acento">
+                    <div class="grupo-formulario"><button class="btn-abrir" id="abrirModal">Solicitar Matricula</button>
+
+                    <div class="modal-overlay" id="miModal">
+                        <div class="modal-content">
+                            <h2>Rellenar Formulario</h2>
+                            <form id="formDatos">
+                                <div class="form-column">
+                                    <div class="grupo-completo">
+                                        <div class="form-group">
+                                            <label for="nombre">NOMBRE</label>
+                                            <input type="text" id="nombre" name="nombre"
+                                                placeholder="Introduce tu nombre" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="apellidos">APELLIDOS</label>
+                                            <input type="text" id="apellidos" name="apellidos"
+                                                placeholder="Introduce tus apellidos" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="email">CORREO ELECTRÓNICO</label>
+                                            <input type="email" id="email" name="email"
+                                                placeholder="Introduce tu correo electrónico" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Columna Derecha: Asignaturas -->
+                                <div class="form-column">
+                                    <!-- Asignaturas 2 horas -->
+                                    <div class="asignaturas-section">
+                                        <h3>Asignaturas (2 horas)</h3>
+                                        <div class="checkbox-group">
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_2h"
+                                                    value="Matemáticas"> Matemáticas</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_2h"
+                                                    value="Física"> Física</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_2h"
+                                                    value="Química"> Química</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_2h"
+                                                    value="Inglés"> Inglés</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_2h"
+                                                    value="Francés"> Francés</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_2h"
+                                                    value="Lengua y literatura"> Lengua y literatura</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_2h"
+                                                    value="Física y química"> Física y química</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Asignaturas 3 horas -->
+                                    <div class="asignaturas-section">
+                                        <h3>Asignaturas (3 horas)</h3>
+                                        <div class="checkbox-group">
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_3h"
+                                                    value="Matemáticas"> Matemáticas</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_3h"
+                                                    value="Física"> Física</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_3h"
+                                                    value="Química"> Química</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_3h"
+                                                    value="Inglés"> Inglés</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_3h"
+                                                    value="Francés"> Francés</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_3h"
+                                                    value="Lengua y literatura"> Lengua y literatura</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_3h"
+                                                    value="Física y química"> Física y química</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Fila Completa: Mensaje y Botón -->
+                                <div class="form-group form-full">
+                                    <label for="mensaje">MENSAJE</label>
+                                    <textarea id="mensaje" name="mensaje"
+                                        placeholder="Escribe tu consulta o mensaje adicional"></textarea>
+                                </div>
+                                <div class="botones-form">
+                                    <button type="submit" class="btn-enviar">Enviar</button>
+                                    <button type="button" class="btn-cerrar" id="cerrarModal">Cerrar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                </li>
 
 
             </ul>
@@ -74,7 +162,93 @@
 
             <div class="grupo-botones">
 
-                <div><button class="btn-color"> Solicitar Matricula</button></div>
+                <div class="grupo-formulario"><button class="btn-abrir" id="abrirModal">Solicitar Matricula</button>
+
+                    <div class="modal-overlay" id="miModal">
+                        <div class="modal-content">
+                            <h2>Rellenar Formulario</h2>
+                            <form id="formDatos">
+                                <div class="form-column">
+                                    <div class="grupo-completo">
+                                        <div class="form-group">
+                                            <label for="nombre">NOMBRE</label>
+                                            <input type="text" id="nombre" name="nombre"
+                                                placeholder="Introduce tu nombre" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="apellidos">APELLIDOS</label>
+                                            <input type="text" id="apellidos" name="apellidos"
+                                                placeholder="Introduce tus apellidos" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="email">CORREO ELECTRÓNICO</label>
+                                            <input type="email" id="email" name="email"
+                                                placeholder="Introduce tu correo electrónico" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Columna Derecha: Asignaturas -->
+                                <div class="form-column">
+                                    <!-- Asignaturas 2 horas -->
+                                    <div class="asignaturas-section">
+                                        <h3>Asignaturas (2 horas)</h3>
+                                        <div class="checkbox-group">
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_2h"
+                                                    value="Matemáticas"> Matemáticas</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_2h"
+                                                    value="Física"> Física</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_2h"
+                                                    value="Química"> Química</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_2h"
+                                                    value="Inglés"> Inglés</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_2h"
+                                                    value="Francés"> Francés</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_2h"
+                                                    value="Lengua y literatura"> Lengua y literatura</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_2h"
+                                                    value="Física y química"> Física y química</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Asignaturas 3 horas -->
+                                    <div class="asignaturas-section">
+                                        <h3>Asignaturas (3 horas)</h3>
+                                        <div class="checkbox-group">
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_3h"
+                                                    value="Matemáticas"> Matemáticas</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_3h"
+                                                    value="Física"> Física</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_3h"
+                                                    value="Química"> Química</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_3h"
+                                                    value="Inglés"> Inglés</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_3h"
+                                                    value="Francés"> Francés</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_3h"
+                                                    value="Lengua y literatura"> Lengua y literatura</label>
+                                            <label class="checkbox-label"><input type="checkbox" name="asig_3h"
+                                                    value="Física y química"> Física y química</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Fila Completa: Mensaje y Botón -->
+                                <div class="form-group form-full">
+                                    <label for="mensaje">MENSAJE</label>
+                                    <textarea id="mensaje" name="mensaje"
+                                        placeholder="Escribe tu consulta o mensaje adicional"></textarea>
+                                </div>
+                                <div class="botones-form">
+                                    <button type="submit" class="btn-enviar">Enviar</button>
+                                    <button type="button" class="btn-cerrar" id="cerrarModal">Cerrar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
                 <div><button class="btn-color"> Escríbenos por WhatsApp</button></div>
             </div>
 
@@ -358,10 +532,12 @@
     </main>
 
     <!-- Elfsight Google Reviews |  -->
-    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="resenias">
+        <script src="https://elfsightcdn.com/platform.js" async></script>
     <div class="elfsight-app-82289662-cc13-4747-af96-646eddb768c4" data-elfsight-app-lazy></div>
-    
-    
+    </div>
+
+
     <section class="mapa">
 
         <h2>¿Dónde nos encontramos?</h2>
@@ -372,7 +548,7 @@
     </section>
 
 
-  <a href="#arriba" id="btnArriba" class="boton-arriba">&#8593;</a>
+    <a href="#arriba" id="btnArriba" class="boton-arriba">&#8593;</a>
 
 
 
