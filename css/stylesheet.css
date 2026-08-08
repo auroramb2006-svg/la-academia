@@ -714,4 +714,21 @@ header nav #nav-links.abierto {
     top: 0;
   }
 
+  
+    .modal-content {
+        width: 750px;
+    }
+
+    #mensaje {
+        width:450px;
+    }
+
+    .asignaturas-section {
+        flex-direction: column;
+    }
+
+    .checkbox-group {
+        gap: 5px;
+    }
+
 }

@@ -590,7 +590,6 @@ h2.form-title {
 .checkbox-label input[type="checkbox"] {
     margin-right: 10px;
     accent-color: #9A7AA8;
-    /* Da color morado al checkbox seleccionado */
     width: 16px;
     height: 16px;
     cursor: pointer;
@@ -605,7 +604,6 @@ h2.form-title {
     display: flex;
 }
 
-/* Estilos de los campos del formulario */
 .modal-content h2 {
     margin-top: 0;
 }
@@ -771,6 +769,16 @@ h2.form-title {
     padding: 30px;
 }
 
+.grupo1-asig {
+    display: flex;
+    gap: 30px;
+
+}
+
+.grupo2-asig {
+    display: flex;
+    gap: 30px;
+}
 
 @media (max-width: 425px) {
 
@@ -846,6 +854,7 @@ h2.form-title {
 
     .modal-content {
         width: 400px;
+        height: 800px;
     }
 
     .form-group {
@@ -854,6 +863,7 @@ h2.form-title {
 
     #mensaje {
         width: 350px;
+        margin-right: 90px;
     }
 
 
@@ -863,13 +873,32 @@ h2.form-title {
 
     .form-full {
         grid-column: span 1;
+        margin-right: 50px;
     }
 
 
-label p{
-    font-size: var(--fs-p);
-}
+    label p {
+        font-size: var(--fs-p);
+    }
 
+    .checkbox-group {
+        gap: 5px;
+        font-size: 5px;
+        display: flex;
+        gap: 80px;
+    }
+.grupo1-asig{
+    display: block;
+        gap: 30px;
+
+}
+.grupo2-asig{
+    display: block;
+    gap: 30px;
+}
+    .checkbox-group label {
+        font-size: 11px;
+    }
 
 }
 
@@ -950,6 +979,12 @@ label p{
     }
 
     .checkbox-group {
-        gap: 10px;
+        gap: 5px;
+        display: flex;
     }
+    .checkbox-group label {
+        font-size: 11px;
+    }
+
+
 }
