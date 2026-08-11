@@ -675,24 +675,5 @@ p {
         gap: 20px;
     }
 
-    .modal-content {
-        width: 700px;
-    }
-
-    #mensaje {
-        width: 550px;
-    }
-
-    .asignaturas-section {
-        flex-direction: column;
-    }
-
-    .checkbox-group {
-        gap: 5px;
-        display: flex;
-    }
-
-    .checkbox-group label {
-        font-size: 11px;
-    }
+    
 }

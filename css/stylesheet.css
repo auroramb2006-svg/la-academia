@@ -416,6 +416,7 @@ header nav #nav-links.abierto {
 }
 
 
+
 .form-container {
   background-color: #ffffff;
   padding: 40px;
@@ -1045,4 +1046,29 @@ h2.form-title {
     top: 0;
   }
 
+}
+
+@media (min-width: 801px) and (max-width: 1050px) {
+    
+
+    .modal-content {
+        width: 700px;
+    }
+
+    #mensaje {
+        width: 550px;
+    }
+
+    .asignaturas-section {
+        flex-direction: column;
+    }
+
+    .checkbox-group {
+        gap: 5px;
+        display: flex;
+    }
+
+    .checkbox-group label {
+        font-size: 11px;
+    }
 }
