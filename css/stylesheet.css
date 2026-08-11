@@ -280,15 +280,17 @@ footer a {
 
 /* COPY FOOTER */
 
-.redes img{
+.redes img {
   height: 50px;
   width: 50px;
 }
-.redes ul{
+
+.redes ul {
   display: flex;
   flex-direction: column;
-  gap:20px;
+  gap: 20px;
 }
+
 .footerCopy p {
   text-align: center;
   letter-spacing: 1px;
@@ -583,14 +585,14 @@ h2.form-title {
 }
 
 .grupo1-asig {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 
 }
 
 .grupo2-asig {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 @media (max-width: 425px) {
@@ -623,22 +625,23 @@ h2.form-title {
     font-size: var(--fs-p);
   }
 
-  .checkbox-label{
+  .checkbox-label {
     width: 160px;
   }
+
   .checkbox-group {
     display: flex;
     margin: 10px 0px;
   }
 
   .grupo1-asig {
-        flex-direction: column;
-gap: 10px;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .grupo2-asig {
-        flex-direction: column;
-        gap:10px;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .checkbox-group label {
@@ -831,6 +834,22 @@ gap: 10px;
 }
 
 @media (min-width: 426px) and (max-width:800px) {
+  .contenidoFooter{
+    height: fit-content;
+  }
+
+  .redes ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contenidoFooter>div:first-child{
+    height: fit-content;
+  }
+
+  footer{
+    height: fit-content;
+  }
 
   body {
     width: 100%;
@@ -844,25 +863,26 @@ gap: 10px;
 
 
 
-    .modal-content {
-        width: 700px;
-    }
+  .modal-content {
+    width: 700px;
+  }
 
-    #mensaje {
-        width: 550px;
-    }
+  #mensaje {
+    width: 550px;
+  }
 
-    .asignaturas-section {
-        flex-direction: column;
-    }
+  .asignaturas-section {
+    flex-direction: column;
+  }
 
-    .checkbox-group {
-        gap: 5px;
-        display: flex;
-    }
-    .checkbox-group label {
-        font-size: 11px;
-    }
+  .checkbox-group {
+    gap: 5px;
+    display: flex;
+  }
+
+  .checkbox-group label {
+    font-size: 11px;
+  }
 
 
 
@@ -977,18 +997,12 @@ gap: 10px;
   footer {
     font-size: 20px;
     gap: 5px;
-    height: 800px;
     text-align: center;
-
   }
 
   .contenidoFooter {
     display: flex;
     flex-direction: column;
-  }
-
-  .footerCopy {
-    margin-top: 25rem;
   }
 
   .menu-footer {
@@ -1021,8 +1035,6 @@ gap: 10px;
   footer {
     font-size: 30px;
     gap: 5px;
-    height: 800px;
-
   }
 
   .menu-footer {
