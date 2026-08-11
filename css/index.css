@@ -1,8 +1,36 @@
-.hero h2,
+/*
+   ESTILOS GLOBALES Y GENERALES
+   */
 p {
     color: var(--ciruela-suave);
 }
 
+.acentuar {
+    border: solid 5px var(--dorado);
+}
+
+.borde-dorado {
+    border: solid 4px var(--dorado);
+}
+
+.bloque {
+    flex: 1;
+    margin-top: 0;
+}
+
+.bloque h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.resenias {
+    padding: 30px;
+}
+
+
+/*
+   SECCIÓN HERO
+*/
 .hero {
     display: flex;
     align-items: center;
@@ -14,17 +42,60 @@ p {
     background-color: rgb(255, 249, 249);
 }
 
-.hero h2 {
-
-    font-size: clamp(0.9rem, 1.5vw, 3rem);
-
+.hero h2,
+p {
+    color: var(--ciruela-suave);
 }
 
+.hero h2 {
+    font-size: clamp(0.9rem, 1.5vw, 3rem);
+}
+
+.hero .sello {
+    position: absolute;
+    top: 150px;
+    right: 0%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid var(--color-primario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-9deg);
+    background-color: var(--crema);
+}
+
+.hero .sello::before {
+    content: "";
+    position: absolute;
+    inset: 7px;
+    border-radius: 50%;
+    border: 1px dashed var(--dorado-oscuro);
+}
+
+.sello-texto {
+    text-align: center;
+    font-weight: 300;
+    color: var(--ciruela-suave);
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.sello-texto .big {
+    font-size: 20px;
+    font-weight: 900;
+    display: block;
+}
+
+
+/*
+   3. BOTONES Y GRUPOS
+  */
 .grupo-botones {
     display: flex;
     gap: 20px;
     justify-content: center;
-
 }
 
 .grupo-botones button {
@@ -36,13 +107,21 @@ p {
     background-color: var(--rosa-oscuro);
 }
 
+.grupo-botones .whats {
+    background-color: white;
+    color: var(--rosa-oscuro);
+}
+
+
+/* 
+   TARJETAS E INFORMACIÓN GENERAL
+ */
 .baraja-info {
     color: var(--gris-tarjetas);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 150px;
     margin: 20px 0px;
-
 }
 
 .tarjeta-info {
@@ -72,21 +151,6 @@ p {
     margin: 0px auto;
 }
 
-
-.titulo-precios {
-
-    background-color: var(--gris-tarjetas);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 300px;
-    justify-content: center;
-    border-top: solid 0.5px var(--gris-borde);
-    border-bottom: solid 0.5px var(--gris-borde);
-}
-
-
 .panel-info h2 {
     color: var(--color-primario);
     margin-top: 20px;
@@ -109,57 +173,26 @@ p {
     text-align: center;
 }
 
-.sello {
-    position: absolute;
-    top: 150px;
-    right: 0%;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 2px solid var(--color-primario);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: rotate(-9deg);
-    background-color: var(--crema);
+.info-click {
+    font-size: 12px;
+    font-weight: 100;
 }
 
-.sello-texto {
-    text-align: center;
-    font-weight: 300;
-    color: var(--ciruela-suave);
-    font-size: 14px;
-    line-height: 1.3;
-}
 
-.sello-texto .big {
-    font-size: 20px;
-    font-weight: 900;
-    display: block;
-
-}
-
-.sello::before {
-    content: "";
-    position: absolute;
-    inset: 7px;
-    border-radius: 50%;
-    border: 1px dashed var(--dorado-oscuro);
-}
-
-.grupo-botones .whats {
-    background-color: white;
-    color: var(--rosa-oscuro);
-
-}
-
+/* 
+    PANEL PRINCIPAL, NIVELES Y ASIGNATURAS
+ */
 .panel-principal {
     display: flex;
     justify-content: center;
-
     gap: 150px;
     margin: 150px 0px;
+}
 
+.panel-principal h2 {
+    color: var(--color-primario);
+    font-family: var(--h1-texto);
+    font-size: 35px;
 }
 
 .section-principal {
@@ -168,30 +201,6 @@ p {
     justify-content: center;
     align-items: center;
 }
-
-.panel-principal h2 {
-    color: var(--ciruela-suave);
-    font-family: var(--h1-texto);
-    font-size: 35px;
-}
-
-
-
-.top {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    background-color: var(--dorado);
-    width: 50px;
-    width: 60px;
-    color: var(--gris-tarjetas);
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-}
-
-
-
 
 .niveles {
     background-color: var(--gris-tarjetas);
@@ -204,11 +213,12 @@ p {
     padding: 20px;
     border: solid 0.5px var(--color-primario);
     box-shadow: 0px 15px 35px var(--neutral);
-
 }
 
-.panel-principal h2 {
-    color: var(--color-primario);
+.niveles .ap2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .caja-niveles {
@@ -217,6 +227,11 @@ p {
     flex-direction: column;
     gap: 50px;
     justify-content: center;
+}
+
+.baraja-niveles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .niveles-panel {
@@ -231,20 +246,11 @@ p {
     font-family: var(--font-heading);
     font-weight: 900;
     transition: transform 0.3s ease;
-
 }
 
 .niveles-panel p {
     font-size: 20px;
     color: var(--color-primario);
-
-}
-
-.baraja-niveles {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-
 }
 
 .asignaturas {
@@ -254,12 +260,35 @@ p {
     font-size: 20px;
 }
 
-.niveles .ap2 {
+.baraja-asignaturas {
     display: flex;
-    flex-direction: column;
-    gap: 40px;
+    justify-content: space-around;
+    gap: 50px;
+    margin: 0px 50px;
 }
 
+.tarjeta-asignaturas {
+    background-color: var(--color-primario);
+    height: 100px;
+    width: 150px;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.tarjeta-asignaturas p {
+    color: var(--gris-tarjetas);
+}
+
+
+/* 
+   HORARIOS Y DIF
+ */
 .dif {
     background-color: var(--gris-tarjetas);
     border: solid 0.5px var(--color-primario);
@@ -267,7 +296,6 @@ p {
 
 .dif h2 {
     color: var(--color-primario);
-
 }
 
 .horario-box {
@@ -282,14 +310,11 @@ p {
     gap: 10px;
 }
 
-
 .horario-box h3 {
     color: var(--gris-tarjetas);
     font-size: 30px;
     font-family: var(--font-heading);
 }
-
-
 
 .horas-horario {
     color: var(--ciruela-suave);
@@ -297,20 +322,64 @@ p {
     font-size: 30px;
     padding: 7px 10px;
     border-radius: 10px;
-
 }
 
 .verano {
     background-color: var(--rosa-oscuro);
 }
 
+.top {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: var(--dorado);
+    width: 60px;
+    color: var(--gris-tarjetas);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*
+   SECCIÓN DE PRECIOS
+ */
+.precios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.precios h2 {
+    color: var(--color-primario);
+    font-family: var(--font-heading);
+    font-size: var(--fs-h1);
+}
+
+.precios p {
+    font-family: var(--font-heading);
+    font-size: var(--fs-h3);
+}
+
+.titulo-precios,
+.titulos-precios {
+    background-color: var(--gris-tarjetas);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border-top: solid 2px var(--gris-borde);
+    border-bottom: solid 2px var(--gris-borde);
+}
 
 .baraja-precios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
     margin: 100px 20px;
-
 }
 
 .tarjeta-precios {
@@ -323,25 +392,10 @@ p {
     flex-direction: column;
     transition: transform 0.3s ease;
     position: relative;
-
-}
-
-.tarjeta-precios {
-    max-width: 430px;
-    height: 470px;
-    background-color: var(--gris-tarjetas);
-    box-shadow: 0px 15px 15px var(--papel);
-    border: solid 0.5px var(--gris-borde);
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s ease;
-    position: relative;
-
 }
 
 .tarjeta-precios ul li {
     font-size: var(--fs-p);
-
 }
 
 .num-precio {
@@ -358,6 +412,12 @@ p {
     text-align: center;
 }
 
+.desc-precio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .desc-precio ul {
     display: flex;
     flex-direction: column;
@@ -369,6 +429,21 @@ p {
     font-size: var(--fs-h3);
 }
 
+.desc-precio h3,
+.desc-precio p {
+    color: var(--ciruela-suave);
+    text-align: center;
+}
+
+.desc-precio button {
+    height: 50px;
+    text-align: center;
+}
+
+.desc-precio .TE p {
+    color: var(--ciruela-suave);
+}
+
 .TE {
     display: flex;
     flex-direction: column;
@@ -377,55 +452,10 @@ p {
     padding: 20px;
 }
 
-.desc-precio h3 {
-    color: var(--ciruela-suave);
-    text-align: center;
-}
 
-.desc-precio p {
-    color: var(--ciruela-suave);
-    text-align: center;
-}
-
-.desc-precio button {
-
-    height: 50px;
-    text-align: center;
-
-}
-
-.precios {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.precios h2 {
-    color: var(--color-primario);
-    font-family: var(--font-heading);
-    font-size: var(--fs-h1);
-
-}
-
-
-.titulos-precios {
-    border-top: solid 2px var(--gris-borde);
-    border-bottom: solid 2px var(--gris-borde);
-    background-color: var(--gris-tarjetas);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-}
-
-
-.acentuar {
-    border: solid 5px var(--dorado);
-}
-
+/*
+    MAPA Y PANELES INFORMATIVOS (MODALES / DESPLEGABLES)
+ */
 .mapa {
     display: flex;
     justify-content: center;
@@ -448,101 +478,29 @@ p {
     margin: 20px;
     border-radius: 20px;
     border: solid 0.75px var(--color-principal);
-    background-color: var(--color-resaltante);
+    background-color: var(--gris-tarjetas);
     overflow: hidden;
     max-height: 0px;
     bottom: 30px;
     z-index: 100;
     align-content: center;
     align-items: center;
-    background-color: var(--gris-tarjetas);
     right: 7%;
     transition: 0.3s ease;
 }
 
-
-
 #contenido-panel-informativo.mostrar {
-
     max-height: 60rem;
-
     border: solid 2px var(--color-primario);
-
 }
 
 
+/*
+   MEDIA QUERIES (RESPONSIVE DESIGN)
+    */
 
-
-
-.tarjeta-asignaturas {
-    background-color: var(--color-primario);
-    height: 100px;
-    width: 150px;
-    padding: 20px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    transition: transform 0.3s ease;
-    position: relative;
-}
-
-.tarjeta-asignaturas p {
-    color: var(--gris-tarjetas);
-}
-
-.baraja-asignaturas {
-    display: flex;
-    justify-content: space-around;
-    gap: 50px;
-    margin: 0px 50px;
-
-}
-
-.info-click {
-    font-size: 12px;
-    font-weight: 100;
-}
-
-
-.precios p {
-    font-family: var(--font-heading);
-    font-size: var(--fs-h3);
-}
-
-
-.borde-dorado {
-    border: solid 4px var(--dorado);
-}
-
-.desc-precio .TE p {
-    color: var(--ciruela-suave);
-}
-
-.bloque {
-    flex: 1;
-    margin-top: 0;
-}
-
-.bloque h2 {
-    margin-top: 0;
-    text-align: center;
-}
-
-.resenias {
-    padding: 30px;
-}
-
-
-
+/* Pantallas pequeñas (hasta 425px) */
 @media (max-width: 425px) {
-
-
-
-
-
-
     .baraja-precios {
         grid-template-columns: 1fr;
         padding: 5%;
@@ -560,23 +518,19 @@ p {
 
     .panel-principal {
         display: contents;
-
     }
 
     .horario-box {
         width: 320px;
-
     }
 
     .caja-niveles {
         margin: 120px 0px;
-
     }
 
     .niveles {
         width: 370px;
         margin: 120px 0px;
-
     }
 
     .niveles-panel {
@@ -595,28 +549,18 @@ p {
         display: none;
     }
 
-
-
     #contenido-panel-informativo {
         height: 200rem;
-
     }
 
     .baraja-asignaturas {
         flex-direction: column;
         gap: 30px;
-
     }
-
-  
-
 }
 
+/* Pantallas medianas (de 426px a 800px) */
 @media (min-width: 426px) and (max-width: 800px) {
-
-
-
-
     .baraja-precios {
         grid-template-columns: repeat(2, 1fr);
         padding: 5%;
@@ -628,14 +572,12 @@ p {
         gap: 60px;
     }
 
-
     .panel-principal {
         gap: 10px;
     }
 
     .horario-box {
         width: 280px;
-
     }
 
     .niveles {
@@ -663,28 +605,19 @@ p {
         right: 20px;
     }
 
-
-
     #contenido-panel-informativo {
         height: 200rem;
-        width: 400px
+        width: 400px;
     }
 
     .baraja-asignaturas {
         flex-direction: column;
         gap: 30px;
-
     }
-
-
-
-
 }
+
+/* Pantallas grandes/portátiles pequeños (de 801px a 1050px) */
 @media (min-width: 801px) and (max-width: 1050px) {
-
-
-
-
     .baraja-precios {
         grid-template-columns: repeat(2, 1fr);
         padding: 5%;
@@ -696,14 +629,12 @@ p {
         gap: 60px;
     }
 
-
     .panel-principal {
         gap: 90px;
     }
 
     .horario-box {
         width: 280px;
-
     }
 
     .niveles {
@@ -731,18 +662,17 @@ p {
         right: 20px;
     }
 
-.tarjeta-asignaturas{
-    width: 125px;
-}
+    .tarjeta-asignaturas {
+        width: 125px;
+    }
 
     #contenido-panel-informativo {
         height: 20rem;
-        width: 1010px
+        width: 1010px;
     }
 
     .baraja-asignaturas {
         gap: 20px;
-
     }
 
     .modal-content {
@@ -761,9 +691,8 @@ p {
         gap: 5px;
         display: flex;
     }
+
     .checkbox-group label {
         font-size: 11px;
     }
-
-
 }
