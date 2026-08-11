@@ -1048,7 +1048,7 @@ h2.form-title {
 
 }
 
-@media (min-width: 801px) and (max-width: 1050px) {
+@media(max-width: 1050px) {
     
 
     .modal-content {
