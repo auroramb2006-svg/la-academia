@@ -105,12 +105,13 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .sello {
     position: absolute;
     top: 150px;
-    right: 20%;
+    right: 0%;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -154,17 +155,18 @@ p {
 .panel-principal {
     display: flex;
     justify-content: center;
-  
+
     gap: 150px;
     margin: 150px 0px;
 
 }
 
-.section-principal{
+.section-principal {
     display: flex;
     flex-direction: column;
     justify-content: center;
-align-items:center ;}
+    align-items: center;
+}
 
 .panel-principal h2 {
     color: var(--ciruela-suave);
@@ -322,6 +324,7 @@ align-items:center ;}
     position: relative;
 
 }
+
 .tarjeta-precios {
     max-width: 430px;
     height: 470px;
@@ -334,8 +337,9 @@ align-items:center ;}
     position: relative;
 
 }
-.tarjeta-precios ul li{
-font-size: var( --fs-p);
+
+.tarjeta-precios ul li {
+    font-size: var(--fs-p);
 
 }
 
@@ -416,6 +420,7 @@ font-size: var( --fs-p);
     height: 300px;
 }
 
+
 .acentuar {
     border: solid 5px var(--dorado);
 }
@@ -429,7 +434,7 @@ font-size: var( --fs-p);
     margin: 150px 0px;
 }
 
-.mapa h2{
+.mapa h2 {
     color: var(--ciruela-suave);
 }
 
@@ -524,6 +529,10 @@ font-size: var( --fs-p);
     text-align: center;
 }
 
+.resenias {
+    padding: 30px;
+}
+
 
 
 @media (max-width: 425px) {
@@ -598,6 +607,7 @@ font-size: var( --fs-p);
 
     }
 
+  
 
 }
 
@@ -607,7 +617,7 @@ font-size: var( --fs-p);
 
 
     .baraja-precios {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         padding: 5%;
     }
 
@@ -617,7 +627,7 @@ font-size: var( --fs-p);
         gap: 60px;
     }
 
-    
+
     .panel-principal {
         gap: 10px;
     }
@@ -627,17 +637,18 @@ font-size: var( --fs-p);
 
     }
 
-.niveles{
-    max-width: 350px;
-}
+    .niveles {
+        max-width: 350px;
+    }
 
     .niveles-panel {
         width: 170px;
         height: 120px;
     }
-#btn-asignaturas{
-height: 120px;
-}
+
+    #btn-asignaturas {
+        height: 120px;
+    }
 
     .titulo-precios {
         text-align: center;
@@ -663,5 +674,95 @@ height: 120px;
         gap: 30px;
 
     }
+
+
+
+
+}
+@media (min-width: 801px) and (max-width: 1050px) {
+
+
+
+
+    .baraja-precios {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5%;
+    }
+
+    .baraja-info {
+        padding: 5%;
+        margin: 5%;
+        gap: 60px;
+    }
+
+
+    .panel-principal {
+        gap: 90px;
+    }
+
+    .horario-box {
+        width: 280px;
+
+    }
+
+    .niveles {
+        max-width: 450px;
+    }
+
+    .niveles-panel {
+        width: 170px;
+        height: 120px;
+    }
+
+    #btn-asignaturas {
+        height: 120px;
+    }
+
+    .titulo-precios {
+        text-align: center;
+    }
+
+    .num-precio h3 {
+        text-align: center;
+    }
+
+    .hero .sello {
+        right: 20px;
+    }
+
+.tarjeta-asignaturas{
+    width: 125px;
+}
+
+    #contenido-panel-informativo {
+        height: 20rem;
+        width: 1010px
+    }
+
+    .baraja-asignaturas {
+        gap: 20px;
+
+    }
+
+    .modal-content {
+        width: 700px;
+    }
+
+    #mensaje {
+        width: 550px;
+    }
+
+    .asignaturas-section {
+        flex-direction: column;
+    }
+
+    .checkbox-group {
+        gap: 5px;
+        display: flex;
+    }
+    .checkbox-group label {
+        font-size: 11px;
+    }
+
 
 }
