@@ -284,10 +284,6 @@ h2{
 }
 
 @media (max-width:800px) {
-    
-
-    
-
     .contenedorTarjetasSeleccion{
         grid-template-columns: 1fr;
     }
