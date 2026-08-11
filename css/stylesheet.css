@@ -413,13 +413,6 @@ header nav #nav-links.abierto {
   color: var(--ciruela-suave);
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: start;
-  align-items: center;
-}
 
 .form-container {
   background-color: #ffffff;
