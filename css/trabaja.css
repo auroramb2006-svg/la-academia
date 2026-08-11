@@ -251,21 +251,42 @@ h2{
 
 @media (max-width: 1200px) {
     .contenedorFormulario aside{
-        height: fit-content%;
+        height: fit-content;
         align-self: center;
     }
 }
 
-@media (max-width:500px) {
-    .contenedorFormulario{
-        grid-template-columns: 1fr;
-    }
 
+@media(max-width: 1050px) {
     .contenedorFormulario .formularioTrabajo>div:first-child{
         display: grid;
         grid-template-columns: 1fr;
         gap: 1rem 1rem;
     }
+    .contenedorFormulario{
+        grid-template-columns: 1fr;
+    }
+
+    .contenedorTarjetasSeleccion{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .contenedorTarjetasSeleccion .tarjetaSeleccion{
+        width: 250px;
+    }
+
+    .contenedorFormulario aside{
+        width: fit-content;
+        justify-self: center;
+    }
+}
+
+@media (max-width:800px) {
+    
+
+    
 
     .contenedorTarjetasSeleccion{
         grid-template-columns: 1fr;
