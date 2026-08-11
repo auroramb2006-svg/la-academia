@@ -246,7 +246,7 @@ h2{
 
 @media (max-width: 1200px) {
     .contenedorFormulario aside{
-        height: 100%;
+        height: fit-content%;
         align-self: center;
     }
 }
