@@ -86,6 +86,7 @@ p {
     border-bottom: solid 0.5px var(--gris-borde);
 }
 
+
 .panel-info h2 {
     color: var(--color-primario);
     margin-top: 20px;
@@ -507,7 +508,7 @@ p {
 
 .precios p {
     font-family: var(--font-heading);
-    font-size: var(--fs-p);
+    font-size: var(--fs-h3);
 }
 
 
