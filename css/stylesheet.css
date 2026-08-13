@@ -1,13 +1,14 @@
+/* Fuente personalizada para el h1 */
 @font-face {
   font-family: 'texto-academia';
   src: url('../img/SketchBlockBold.ttf');
 }
 
+/* Variables globales: colores, tipografías y tamaños de fuente responsive */
 :root {
   --color-primario: #b588bd;
   --color-bg: #faf8ff;
   --color-texto: #4a3a44;
-  --color-accent: #9cdebb;
   --color-neutral: #ffeedd;
   --rosa-oscuro: #9f65ad;
   --rosa-claro: #fee6ff;
@@ -19,7 +20,6 @@
   --gold-fuerte: #ffeacd;
   --dorado-oscuro: #c98a3d;
   --dorado: #dfa661;
-  --sage: #7a9179;
   --gris-borde: #f2decb;
   --violeta: #975aa8;
   --gris-tarjetas: rgb(250, 250, 250);
@@ -39,16 +39,19 @@
   --fs-psmall: clamp(0.2rem, 0.08vw + 0.55rem, 1rem);
 }
 
+/* Reset básico */
 * {
   box-sizing: border-box;
   padding: 0%;
   margin: 0;
 }
 
+/* Scroll suave al usar anclas (#) */
 html {
   scroll-behavior: smooth;
 }
 
+/* Botón flotante "subir arriba" */
 .boton-arriba {
   position: fixed;
   bottom: 20px;
@@ -65,11 +68,13 @@ html {
   z-index: 999;
 }
 
+/* Estado visible del botón (activado por JS con scroll) */
 .boton-arriba.visible {
   opacity: 1;
   pointer-events: auto;
 }
 
+/* Icono hamburguesa */
 .menu-hamburguesa {
   display: none;
   flex-direction: column;
@@ -87,7 +92,7 @@ button {
 
 }
 
-
+/* Tamaños de fuente por elemento*/
 h1 {
   font-size: var(--fs-h1);
 }
@@ -119,7 +124,7 @@ p {
 }
 
 
-
+/* Tipografía de encabezados */
 h1,
 h2,
 h3,
@@ -132,6 +137,7 @@ h1 {
   font-family: var(--h1-texto);
 }
 
+/* Logo de la cabecera */
 .logo img {
   height: 90px;
 }
@@ -149,6 +155,7 @@ h1 {
   font-size: var(--fs-h2);
 }
 
+/* Estilo base de todos los botones */
 button {
   background-color: var(--color-primario);
   color: white;
@@ -156,6 +163,7 @@ button {
   padding: 10px 20px;
 }
 
+/* Cabecera fija sticky */
 header {
   position: sticky;
   top: 0px;
@@ -169,7 +177,7 @@ header {
 }
 
 
-
+/* Lista del menú de navegación */
 nav ul {
   display: flex;
   gap: 20px;
@@ -179,13 +187,14 @@ nav ul {
 
 }
 
+/* Estilo base del body */
 body {
   background-color: var(--gold);
   font-family: var(--font-body);
   line-height: 1.6;
 }
 
-
+/* Estilo base de los enlaces */
 a {
   text-decoration: none;
   color: var(--color-bg);
@@ -193,6 +202,7 @@ a {
   font-family: var(--font-body);
 }
 
+/* Botón destacado del nav "Solicitar Matrícula" */
 .acento a {
   background-color: var(--color-bg);
   color: var(--dorado-oscuro);
@@ -223,6 +233,7 @@ footer a {
   line-height: 30px;
 }
 
+/* Columnas del footer */
 .contenidoFooter {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -282,6 +293,7 @@ footer a {
 
 /* COPY FOOTER */
 
+/* Iconos de redes sociales */
 .redes img {
   height: 50px;
   width: 50px;
@@ -294,6 +306,7 @@ footer a {
   gap: 20px;
 }
 
+/* Línea de copyright al final del footer */
 .footerCopy p {
   text-align: center;
   letter-spacing: 1px;
@@ -304,6 +317,7 @@ footer a {
   padding: 1rem;
 }
 
+/* Fondo de rejilla decorativa (hero) */
 .cuadricula {
   background-image:
     linear-gradient(var(--color-cuadricula) 1px, transparent 1px),
@@ -311,6 +325,7 @@ footer a {
   background-size: 40px 40px;
 }
 
+/* Sección hero */
 .hero {
   display: flex;
   align-items: center;
@@ -322,12 +337,13 @@ footer a {
   background-color: var(--background-hero);
 }
 
+/* Nav móvil abierto */
 header nav #nav-links.abierto {
-  max-height: 900px !important;
-  opacity: 1 !important;
+  max-height: 900px ;
+  opacity: 1 ;
 }
 
-
+/* Animación del icono hamburguesa al abrir (forma de X) */
 .menu-hamburguesa.animacion .linea:nth-child(1) {
   transform: translateY(11px) rotate(45deg);
   background-color: var(--crema);
@@ -351,7 +367,7 @@ header nav #nav-links.abierto {
   transition: all 0.3s ease;
 }
 
-
+/* Botón que abre el modal */
 .btn-abrir {
   background-color: var(--dorado);
   color: white;
@@ -365,6 +381,7 @@ header nav #nav-links.abierto {
   background-color: var(--dorado-oscuro);
 }
 
+/* Fondo grisaceo del modal */
 .modal-overlay {
   display: none;
   position: fixed;
@@ -380,6 +397,7 @@ header nav #nav-links.abierto {
   z-index: 1000;
 }
 
+/* Caja blanca del modal */
 .modal-content {
   background-color: white;
   padding: 30px;
@@ -401,6 +419,7 @@ header nav #nav-links.abierto {
   color: var(--color-primario);
 }
 
+/* Columna de datos personales del formulario */
 .grupo-completo {
   display: flex;
   gap: 20px;
@@ -409,12 +428,9 @@ header nav #nav-links.abierto {
   margin-right: 200px;
 }
 
-
-
 .modal-content h3 {
   color: var(--ciruela-suave);
 }
-
 
 
 .form-container {
@@ -447,6 +463,7 @@ h2.form-title {
   gap: 25px;
 }
 
+/* Columnas del formulario de matrícula */
 .form-column {
   display: flex;
   flex-direction: column;
@@ -470,6 +487,7 @@ h2.form-title {
   letter-spacing: 0.5px;
 }
 
+/* Inputs y textarea del formulario */
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group textarea {
@@ -498,6 +516,7 @@ h2.form-title {
   padding-bottom: 6px;
 }
 
+/* Checkboxes de asignaturas */
 .checkbox-group {
   display: flex;
   gap: 10px;
@@ -519,8 +538,7 @@ h2.form-title {
   cursor: pointer;
 }
 
-
-
+/* Botones Enviar/Cerrar del formulario */
 .botones-form {
   display: flex;
 }
@@ -578,6 +596,7 @@ h2.form-title {
   background-color: #c82333;
 }
 
+/* Distribución en fila de los grupos de checkboxes */
 .grupo1-asig {
   display: flex;
   gap: 30px;
@@ -589,6 +608,7 @@ h2.form-title {
   gap: 30px;
 }
 
+/*  MÓVIL (hasta 425px)  */
 @media (max-width: 425px) {
   .modal-content {
     width: 400px;
@@ -599,7 +619,7 @@ h2.form-title {
     width: 300px;
   }
 
- 
+
 
 
   .form-grid {
@@ -671,6 +691,7 @@ h2.form-title {
     text-align: center;
   }
 
+  /* Cabecera y menú hamburguesa en móvil */
   header {
     display: flex;
     flex-direction: row;
@@ -710,6 +731,7 @@ h2.form-title {
     transition: all 0.3s ease;
   }
 
+  /* Menú desplegable oculto por defecto */
   header nav #nav-links {
     display: flex;
     flex-direction: column;
@@ -727,12 +749,7 @@ h2.form-title {
     transition: max-height 0.4s, opacity 0.3s ease;
   }
 
-
-
-
-
-
-
+  /* Menú desplegado (clase añadida por JS) */
   header nav #nav-links.abierto {
     max-height: 900px;
     opacity: 1;
@@ -770,21 +787,23 @@ h2.form-title {
 
   }
 
+  /* Redes sociales en fila y centradas */
+  .redes {
+    justify-content: center;
+  }
 
-.redes{
-  justify-content: center;
-}
-.redes ul {
-flex-direction: row;
-}
+  .redes ul {
+    flex-direction: row;
+  }
 
+  /* Footer apilado en móvil */
   footer {
     font-size: 20px;
     gap: 20px;
     height: 790px;
     text-align: center;
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   .contenidoFooter {
@@ -804,7 +823,7 @@ flex-direction: column;
     padding: 10px;
   }
 
- 
+
 
   .animacion .linea:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
@@ -827,8 +846,9 @@ flex-direction: column;
 
 }
 
+/*  TABLET pequeña (426px - 800px)  */
 @media (min-width: 426px) and (max-width:800px) {
-  .contenidoFooter{
+  .contenidoFooter {
     height: fit-content;
   }
 
@@ -837,11 +857,11 @@ flex-direction: column;
     justify-content: center;
   }
 
-  .contenidoFooter>div:first-child{
+  .contenidoFooter>div:first-child {
     height: fit-content;
   }
 
-  footer{
+  footer {
     height: fit-content;
   }
 
@@ -1046,9 +1066,10 @@ flex-direction: column;
 
 }
 
-@media (min-width:801px)  and (max-width: 1050px) {
-    
-  nav ul li a{
+/*  TABLET grande / portátil pequeño (801px - 1050px)  */
+@media (min-width:801px) and (max-width: 1050px) {
+
+  nav ul li a {
     font-size: 15px;
   }
 
@@ -1057,30 +1078,42 @@ flex-direction: column;
     gap: 0;
   }
 
-  .logo p{
+  .logo p {
     font-size: 20px;
   }
 
-  .logo img{
+  .logo img {
     height: 70px;
   }
 
-    .modal-content {
-        width: 700px;
-    }
+  .modal-content {
+    width: 700px;
+  }
 
-   
 
-    .asignaturas-section {
-        flex-direction: column;
-    }
+  footer {
+    height: 400px;
 
-    .checkbox-group {
-        gap: 5px;
-        display: flex;
-    }
+  }
 
-    .checkbox-group label {
-        font-size: 11px;
-    }
+  .footerCopy {
+    padding-top: 50px;
+  }
+
+  .asignaturas-section {
+    flex-direction: column;
+  }
+
+  .divEnlaces {
+    width: 100%;
+  }
+
+  .checkbox-group {
+    gap: 5px;
+    display: flex;
+  }
+
+  .checkbox-group label {
+    font-size: 11px;
+  }
 }

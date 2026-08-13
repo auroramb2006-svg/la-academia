@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inicio</title>
+    <!-- Hojas de estilo: general (stylesheet.css) y específica de esta página (index.css) -->
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/index.css">
 
+    <!-- Fuentes de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Outfit:wght@700;800&display=swap"
@@ -21,49 +23,50 @@
 
 <body>
 
+    <!-- Ancla vacía, punto al que vuelve el botón "subir arriba" del final de la página -->
     <div id="arriba"></div>
-    <!-- header -->
+
+    <!-- HEADER:  logo, botón hamburguesa y menú de navegación -->
     <header class="sticky">
 
         <div class="logo"><img src="img/logo.png" alt="">
             <p>La Academia</p>
         </div>
 
-
+        <!-- Botón hamburguesa: solo visible/funcional en móvil, abre/cierra el nav -->
         <button class="menu-hamburguesa" id="btn-menu">
             <span class="linea"></span>
             <span class="linea"></span>
             <span class="linea"></span>
         </button>
 
-
         <nav>
             <ul id="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="trabaja.html">Trabaja con nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="https://laacademiasc.es/moodle/" >Campus Virtual</a></li>
+                <li><a href="https://laacademiasc.es/moodle/">Campus Virtual</a></li>
 
+                <!-- Botón que abre el modal de matrícula -->
                 <li class="acento">
                     <button class="btn-abrir" id="abrirModalNav">Solicitar Matricula</button>
                 </li>
-
-
-
             </ul>
         </nav>
 
     </header>
 
-    <!-- main -->
-
     <main>
 
+        <!-- MODAL de "Solicitar Matrícula", 
+             se muestra al pulsar cualquier botón .btn-abrir. Vive fuera del nav, una única vez en toda la página -->
         <section class="solicitarmat">
             <div class="modal-overlay" id="miModal">
                 <div class="modal-content">
                     <h2>Rellenar Formulario</h2>
                     <form id="formDatos">
+
+                        <!-- Columna 1: datos personales -->
                         <div class="form-column">
                             <div class="grupo-completo">
                                 <div class="form-group">
@@ -84,6 +87,7 @@
                             </div>
                         </div>
 
+                        <!-- Columna 2: checkboxes de asignaturas, separadas en bloques de 2h y 3h semanales -->
                         <div class="form-column">
                             <div class="asignaturas-section">
                                 <h3>Asignaturas (2 horas)</h3>
@@ -134,6 +138,7 @@
                             </div>
                         </div>
 
+                        <!-- mensaje libre y botones de enviar/cerrar -->
                         <div class="form-group form-full">
                             <label for="mensaje">MENSAJE</label>
                             <textarea id="mensaje" name="mensaje"
@@ -148,85 +153,63 @@
             </div>
         </section>
 
+        <!-- HERO: título principal, eslogan, sello "Nº1" y botones de matrícula/WhatsApp -->
         <section class="hero cuadricula">
 
             <div class="info">
-                <p>Arroyo de la Miel · Málaga
-                </p>
-
+                <p>Arroyo de la Miel · Málaga</p>
                 <h1>La Academia</h1>
-
-                <h2>Donde nuestro esfuerzo y dedicación <br> ¡no tienen comparación!
-
-                </h2>
+                <h2>Donde nuestro esfuerzo y dedicación <br> ¡no tienen comparación!</h2>
 
                 <div class="sello">
                     <div class="sello-texto"><span class="big">Nº1 <br></span> aprobados<br>precio · calidad</div>
                 </div>
             </div>
 
-
             <div class="grupo-botones">
+                <!-- Segundo botón que abre el mismo modal #miModal-->
                 <button class="btn-abrir" id="abrirModalHero">Solicitar Matricula</button>
                 <div><button class="btn-color was"><a
-                            href="https://wa.me/34662510860?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20las%20clases">Escríbenos
-                            por Whatshapp</a></button></div>
+                            href="https://wa.me/34662510860?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20las%20clases">
+                            Escríbenos
+                            por Whatsapp</a></button></div>
             </div>
 
         </section>
 
+        <!--3 tarjetas simples con icono y título -->
         <section class="panel-info">
             <h2>¿Qué nos diferencia?</h2>
             <div class="baraja-info">
 
                 <article class="tarjeta-info">
-
-                    <figure>
-                        <img src="img/group_24dp_B27FBE_FILL0_wght400_GRAD0_opsz24.svg">
-                    </figure>
-
+                    <figure><img src="img/group_24dp_B27FBE_FILL0_wght400_GRAD0_opsz24.svg"></figure>
                     <h3>Grupos reducidos</h3>
-
                 </article>
 
-
                 <article class="tarjeta-info">
-
-                    <figure>
-                        <img src="img/school_24dp_B27FBE_FILL0_wght400_GRAD0_opsz24.svg">
-                    </figure>
-
+                    <figure><img src="img/school_24dp_B27FBE_FILL0_wght400_GRAD0_opsz24.svg"></figure>
                     <h3>Profesores especializados</h3>
-
                 </article>
 
-
-
                 <article class="tarjeta-info">
-
-                    <figure>
-                        <img src="img/payments_24dp_B27FBE_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                    </figure>
-
+                    <figure><img src="img/payments_24dp_B27FBE_FILL0_wght400_GRAD0_opsz24.svg" alt=""></figure>
                     <h3>Precios económicos</h3>
-
                 </article>
             </div>
-
         </section>
 
+        <!-- Sección principal: horarios, niveles académicos y listado de asignaturas -->
         <section class="section-principal">
 
             <div class="panel-principal">
 
-
+                <!-- Horarios por temporada -->
                 <div class="niveles dif bloque-contenedor">
                     <div class="bloque">
                         <h2>Horario de Clases</h2>
                     </div>
-
                     <div class="ap2">
-
                         <div class="horario-box">
                             <h3 class="titulo-horario">Octubre - Junio</h3>
                             <p class="horas-horario">16:30 - 21:30</p>
@@ -235,232 +218,163 @@
                             <h3 class="titulo-horario">Julio - Agosto</h3>
                             <p class="horas-horario">09:00 - 14:00</p>
                         </div>
-
                     </div>
                 </div>
 
+                <!-- Niveles académicos ofrecidos y botón que despliega el panel de asignaturas -->
                 <div class="caja-niveles bloque-contenedor">
                     <div class="bloque">
                         <h2>Niveles Académicos</h2>
                     </div>
 
-                    <div class="baraja-niveles ">
+                    <div class="baraja-niveles">
                         <div class="niveles-panel">
-                            <p>
-                                Primaria
-                            </p>
+                            <p>Primaria</p>
                         </div>
                         <div class="niveles-panel">
-                            <p>
-                                Secundaria
-                            </p>
+                            <p>Secundaria</p>
                         </div>
                         <div class="niveles-panel">
-                            <p>
-                                Bachillerato
-                            </p>
+                            <p>Bachillerato</p>
                         </div>
                         <div class="niveles-panel">
-                            <p>
-                                Ciclos Formativos
-
-                            </p>
+                            <p>Ciclos Formativos</p>
+                        </div>
+                        <div class="niveles-panel">
+                            <p>Selectividad</p>
                         </div>
 
-                        <div class="niveles-panel ">
-                            <p>
-                                Selectividad
-                            </p>
-                        </div>
-                        <div class="niveles-panel ">
-                            <button class="btn-color asignaturas" id="btn-asignaturas">Asignaturas<br> <span
-                                    class="info-click">¡Haz click para ver las asignaturas disponibles!</span></button>
+                        <!-- Este botón hace toggle de la clase "mostrar" en #contenido-panel-informativo (vía JS) -->
+                        <div class="niveles-panel">
+                            <button class="btn-color asignaturas" id="btn-asignaturas">Asignaturas<br>
+                                <span class="info-click">¡Haz click para ver las asignaturas disponibles!</span>
+                            </button>
                             <p></p>
-
                         </div>
-
                     </div>
-
-
                 </div>
             </div>
 
+            <!-- Panel de asignaturas: oculto por defecto, se muestra/oculta con el botón de arriba -->
             <div id="contenido-panel-informativo">
-
-
-
                 <div class="baraja-asignaturas">
 
-
-
+                    <!-- Las 3 primeras llevan la etiqueta "top" que son destacadas -->
                     <article class="tarjeta-asignaturas btn-color borde-dorado">
-
                         <p>Matemáticas</p>
-
-                        <p class="top ">top</p>
-
+                        <p class="top">top</p>
                     </article>
-
                     <article class="tarjeta-asignaturas btn-color borde-dorado">
-
                         <p>Física</p>
-
-                        <p class="top ">top</p>
-
+                        <p class="top">top</p>
                     </article>
-
                     <article class="tarjeta-asignaturas btn-color borde-dorado">
-
                         <p>Química</p>
-
-                        <p class="top ">top</p>
-
+                        <p class="top">top</p>
                     </article>
 
+                    <!-- Resto sin destacar -->
                     <article class="tarjeta-asignaturas btn-color">
-
                         <p>Francés</p>
-
                     </article>
-
                     <article class="tarjeta-asignaturas btn-color">
-
                         <p>Inglés</p>
-
                     </article>
-
                     <article class="tarjeta-asignaturas btn-color">
-
-                        <p>Lengua y literatura
-
-                        </p>
-
+                        <p>Lengua y literatura</p>
                     </article>
-
                     <article class="tarjeta-asignaturas btn-color">
-
-                        <p> Física y química </p>
-
+                        <p>Física y química</p>
                     </article>
-
-
 
                 </div>
-
-
-
             </div>
-
-
         </section>
 
-
+        <!-- Sección de precios: tarjetas con distintas combinaciones de asignaturas/horas -->
         <section class="precios">
 
             <div class="titulo-precios">
-                <h2> ¿Cuánto cuesta? </h2>
-                <p>Cuantas más asignaturas, ¡Menor precio! </p>
+                <h2>¿Cuánto cuesta?</h2>
+                <p>Cuantas más asignaturas, ¡Menor precio!</p>
             </div>
 
             <div class="baraja-precios">
                 <article class="tarjeta-precios">
-
-
                     <div class="num-precio">50€ /mes</div>
-
                     <div class="desc-precio">
                         <ul>
                             <li>1 Asignatura</li>
                             <li>2 horas a la semana (martes y jueves)</li>
                         </ul>
                     </div>
-
-
                 </article>
+
                 <article class="tarjeta-precios">
-
                     <div class="num-precio">60€ /mes</div>
-
                     <div class="desc-precio">
                         <ul>
                             <li>1 Asignatura</li>
-                            <li> 3 horas a la semana (lunes, miércoles y viernes)</li>
+                            <li>3 horas a la semana (lunes, miércoles y viernes)</li>
                         </ul>
                     </div>
-
-
                 </article>
+
+                <!-- Tarjeta destacada con "top" -->
                 <article class="tarjeta-precios borde-dorado">
-
                     <div class="num-precio">80€ /mes</div>
-
                     <div class="desc-precio">
                         <ul>
-                            <li> 2 asignaturas</li>
-                            <li> 2 horas a la semana cada una (martes y jueves)</li>
+                            <li>2 asignaturas</li>
+                            <li>2 horas a la semana cada una (martes y jueves)</li>
                         </ul>
-
-
                     </div>
-
                     <p class="top">top</p>
-
                 </article>
-                <article class="tarjeta-precios">
 
+                <article class="tarjeta-precios">
                     <div class="num-precio">90€ /mes</div>
-
                     <div class="desc-precio">
                         <ul>
-                            <li> 2 asignaturas</li>
-                            <li> Una 2 horas a la semana (martes y jueves)</li>
-                            <li> Otra 3 horas a la semana (lunes, miércoles y viernes)</li>
+                            <li>2 asignaturas</li>
+                            <li>Una 2 horas a la semana (martes y jueves)</li>
+                            <li>Otra 3 horas a la semana (lunes, miércoles y viernes)</li>
                         </ul>
                     </div>
-
-
                 </article>
-                <article class="tarjeta-precios">
 
+                <article class="tarjeta-precios">
                     <div class="num-precio">100€ /mes</div>
-
                     <div class="desc-precio">
                         <ul>
-                            <li> 2 asignaturas</li>
-                            <li> 3 horas a la semana cada una (lunes, miércoles y viernes)</li>
+                            <li>2 asignaturas</li>
+                            <li>3 horas a la semana cada una (lunes, miércoles y viernes)</li>
                         </ul>
                     </div>
-
-
                 </article>
+
+                <!-- Tarjeta final: no es un precio fijo, invita a contactar para casos personalizados -->
                 <article class="tarjeta-precios">
-
-                    <div class="num-precio">¿Otra combinación?
-
-                    </div>
-
+                    <div class="num-precio">¿Otra combinación?</div>
                     <div class="desc-precio TE">
                         <h3>¡Consultanos!</h3>
-                        <p>No dudes en preguntarnos una combinación, te contestaremos con el precio en la mayor brevedad
-                            posible</p>
+                        <p>No dudes en preguntarnos una combinación, te contestaremos con el precio en la mayor
+                            brevedad posible</p>
                         <button class="btn-color"><a href="contacto.html">Contácta con nosotros</a></button>
                     </div>
-
-
                 </article>
             </div>
         </section>
     </main>
 
-    <!-- Elfsight Google Reviews |  -->
+    <!--Muestra las reseñas de Google en la página -->
     <div class="resenias">
         <script src="https://elfsightcdn.com/platform.js" async></script>
         <div class="elfsight-app-82289662-cc13-4747-af96-646eddb768c4" data-elfsight-app-lazy></div>
     </div>
 
-
+    <!-- Mapa embebido de Google Maps con la ubicación de la academia -->
     <section class="mapa">
-
         <h2>¿Dónde nos encontramos?</h2>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6405.974177719535!2d-4.531726!3d36.60262!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72fc9b33f0e3e9%3A0xc33acc92e21fddaa!2sLa%20Academia!5e0!3m2!1ses!2sus!4v1784816382214!5m2!1ses!2sus"
@@ -468,20 +382,14 @@
             referrerpolicy="strict-origin-when-cross-origin"></iframe>
     </section>
 
-
+    <!-- Botón "subir arriba": vuelve al ancla #arriba, se muestra según el scroll (vía JS) -->
     <a href="#arriba" id="btnArriba" class="boton-arriba">&#8593;</a>
 
-
-
-
-    <!-- footer -->
-
-
+    <!-- FOOTER: logo, redes sociales, enlaces rápidos y datos de contacto -->
     <footer>
         <div class="contenidoFooter">
             <div>
                 <img src="img/logo.png" alt="Logo de la academia">
-                <!-- <p>Aprendizaje cercano, grupos reducidos y acompañamiento personalizado</p> -->
             </div>
 
             <div class="redes">
@@ -495,16 +403,19 @@
                 </ul>
             </div>
 
-            <div class="divEnlaces ">
+            <div class="divEnlaces">
                 <p class="tituloFooter">Enlaces</p>
                 <ul>
                     <li><a href="./index.html">Inicio</a></li>
                     <li><a href="./trabaja.html">Trabaja con nosotros</a></li>
                     <li><a href="./contacto.html">Contacto</a></li>
-                    <li><a href="./matricula.html">Solicitar Matrícula</a></li>
+                    <li><a href="https://laacademiasc.es/moodle/">Campus Virtual</a></li>
+
+                    <li>
+                        <button class="btn-abrir" id="abrirModalNav">Solicitar Matricula</button>
+                    </li>
                 </ul>
             </div>
-
 
             <div>
                 <address>
@@ -516,13 +427,13 @@
                     </div>
                 </address>
             </div>
-
-
         </div>
         <div class="footerCopy">
             <p>© 2026 La Academia - Todos los derechos reservados</p>
         </div>
     </footer>
+
+    <!-- Script con toda la interactividad: hovers, menú móvil, modal, scroll-to-top, panel de asignaturas -->
     <script src="js/index.js"></script>
 </body>
 
