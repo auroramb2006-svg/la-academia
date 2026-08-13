@@ -48,13 +48,14 @@ p {
 }
 
 .hero h2 {
-    font-size: clamp(0.9rem, 1.5vw, 3rem);
+   font-size: var(--fs-h3);
+   font-weight: 400;
 }
 
 .hero .sello {
     position: absolute;
     top: 150px;
-    right: 0%;
+    right: 30%;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -88,6 +89,9 @@ p {
     display: block;
 }
 
+.was a{
+    font-size: var(--fs-p);
+}
 
 /*
    3. BOTONES Y GRUPOS
@@ -424,11 +428,19 @@ p {
     list-style: none;
     gap: 30px;
     padding: 40px;
-    font-weight: 600;
     color: var(--ciruela-suave);
-    font-size: var(--fs-h3);
+}
+.desc-precio ul li{
+        font-size: var(--fs-h3);
+
 }
 
+.desc-precio ul li::before {
+    content: "✓";
+    inset: 7px;
+    font-weight: 800;
+    padding-right: 20px;
+}
 .desc-precio h3,
 .desc-precio p {
     color: var(--ciruela-suave);
