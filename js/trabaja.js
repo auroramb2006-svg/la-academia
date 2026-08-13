@@ -30,24 +30,22 @@ if (btnMenu && navLinks) {
     }
   });
 
-      const btnAbrir = document.getElementById('abrirModal');
-        const btnCerrar = document.getElementById('cerrarModal');
-        const modal = document.getElementById('miModal');
+const modal = document.getElementById('miModal');
+const btnCerrar = document.getElementById('cerrarModal');
+const botonesAbrir = document.querySelectorAll('.btn-abrir:not(.asignaturas)');
 
-        // Mostrar el formulario y el fondo gris
-        btnAbrir.addEventListener('click', () => {
-            modal.style.display = 'flex';
-        });
+botonesAbrir.forEach(btn => {
+    btn.addEventListener('click', () => {
+        modal.style.display = 'flex';
+    });
+});
 
-        // Ocultar el formulario al hacer clic en "Cerrar"
-        btnCerrar.addEventListener('click', () => {
-            modal.style.display = 'none';
-        });
+btnCerrar.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
 
-        // Opcional: Cerrar también si se hace clic fuera de la caja blanca (en el fondo gris)
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.style.display = 'none';
-            }
-        });
- 
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.style.display = 'none';
+    }
+});

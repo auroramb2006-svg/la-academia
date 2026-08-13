@@ -80,27 +80,22 @@ if (btnMenu && navLinks) {
     }
   });
 
-const grupos = document.querySelectorAll('.grupo-formulario');
+const modal = document.getElementById('miModal');
+const btnCerrar = document.getElementById('cerrarModal');
+const botonesAbrir = document.querySelectorAll('.btn-abrir:not(.asignaturas)');
 
-grupos.forEach(grupo => {
-    const btnAbrir = grupo.querySelector('.btn-abrir');
-    const modal = grupo.querySelector('.modal-overlay');
-    const btnCerrar = grupo.querySelector('.btn-cerrar');
-
-    // Mostrar modal
-    btnAbrir.addEventListener('click', () => {
+botonesAbrir.forEach(btn => {
+    btn.addEventListener('click', () => {
         modal.style.display = 'flex';
     });
+});
 
-    // Ocultar con botón cerrar
-    btnCerrar.addEventListener('click', () => {
+btnCerrar.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
         modal.style.display = 'none';
-    });
-
-    // Ocultar haciendo clic en el fondo gris
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            modal.style.display = 'none';
-        }
-    });
+    }
 });
