@@ -409,10 +409,7 @@ header nav #nav-links.abierto {
   margin-right: 200px;
 }
 
-#mensaje {
-  height: 55px;
-  width: 700px;
-}
+
 
 .modal-content h3 {
   color: var(--ciruela-suave);
@@ -602,10 +599,7 @@ h2.form-title {
     width: 300px;
   }
 
-  #mensaje {
-    width: 350px;
-    margin-right: 90px;
-  }
+ 
 
 
   .form-grid {
@@ -867,9 +861,7 @@ flex-direction: column;
     width: 700px;
   }
 
-  #mensaje {
-    width: 550px;
-  }
+
 
   .asignaturas-section {
     flex-direction: column;
@@ -1077,9 +1069,7 @@ flex-direction: column;
         width: 700px;
     }
 
-    #mensaje {
-        width: 550px;
-    }
+   
 
     .asignaturas-section {
         flex-direction: column;
