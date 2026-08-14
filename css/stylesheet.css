@@ -612,7 +612,7 @@ h2.form-title {
 @media (max-width: 425px) {
   .modal-content {
     width: 400px;
-    height: 900px;
+    height: 850px;
   }
 
   .form-group {
